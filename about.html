@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - SIV Digital</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="theme-toggle" onclick="toggleTheme()">
+        <span class="icon">🌓</span>
+        <span class="text">Toggle Theme</span>
+    </div>
+
+    <header>
+        <nav>
+            <a href="index.html" class="logo">SIV <span class="highlight">Digital</span></a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="smart-music-player.html">Smart Music</a></li>
+                <li><a href="dream-diary.html">Dream Diary</a></li>
+                <li><a href="data-desk.html">Data Desk</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="about-hero">
+        <h1>About SIV Digital</h1>
+        <p>Salem Innovative Ventures - Where innovation meets craftsmanship in digital experiences</p>
+    </section>
+
+    <div class="about-content">
+        <section class="about-section">
+            <h2>Our Story</h2>
+            <p>Founded with a vision to revolutionize mobile experiences, SIV Digital (Salem Innovative Ventures) emerged from a passion for creating digital solutions that truly matter. We believe technology should enhance human potential, not complicate it.</p>
+            <p>Our journey began with a simple question: "How can we make digital tools that people actually love using?" This philosophy drives every line of code we write, every interface we design, and every feature we develop.</p>
+        </section>
+
+        <section class="about-section">
+            <h2>Our Mission</h2>
+            <p>To craft premium mobile applications and digital solutions that seamlessly integrate into people's lives, empowering them to create, manage, and experience their digital world with unprecedented ease and joy.</p>
+        </section>
+
+        <section class="about-section">
+            <h2>Our Values</h2>
+            <div class="values-grid">
+                <div class="value-card">
+                    <h3>🚀 Innovation</h3>
+                    <p>We push boundaries and explore new possibilities in mobile technology, always staying ahead of the curve.</p>
+                </div>
+                <div class="value-card">
+                    <h3>🎨 Craftsmanship</h3>
+                    <p>Every pixel, every interaction, every feature is carefully crafted with attention to detail and user experience.</p>
+                </div>
+                <div class="value-card">
+                    <h3>🛡️ Privacy</h3>
+                    <p>Your data belongs to you. We build with privacy-first principles and transparent practices.</p>
+                </div>
+                <div class="value-card">
+                    <h3>⚡ Performance</h3>
+                    <p>Speed and efficiency are not optional. Our apps are optimized for seamless, lightning-fast experiences.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="about-section">
+            <h2>Our Products</h2>
+            <p>We specialize in three core areas that represent the future of mobile productivity and entertainment:</p>
+            <p><strong>Smart Music Player:</strong> Revolutionizing how people experience music with AI-powered features and stunning visualizations.</p>
+            <p><strong>Dream Diary:</strong> Helping users unlock the mysteries of their subconscious through intelligent dream journaling and analysis.</p>
+            <p><strong>Data Desk:</strong> Empowering professionals with comprehensive data management and visualization tools that work anywhere.</p>
+        </section>
+
+        <section class="about-section">
+            <h2>Looking Forward</h2>
+            <p>We're constantly exploring new frontiers in mobile technology. From augmented reality experiences to advanced AI integration, our roadmap is filled with exciting innovations that will continue to push the boundaries of what's possible on mobile devices.</p>
+            <p>Join us on this journey as we continue to build the future, one exceptional app at a time.</p>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 SIV Digital - Salem Innovative Ventures. All Rights Reserved.</p>
+        <p><a href="index.html">Home</a> | <a href="#">Contact</a> | <a href="#">Support</a> | <a href="#">Careers</a></p>
+    </footer>
+
+    <script>
+        function toggleTheme() {
+            const html = document.documentElement;
+            const currentTheme = html.getAttribute('data-theme');
+            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+            
+            html.setAttribute('data-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+            
+            // Update toggle button text
+            const toggleText = document.querySelector('.theme-toggle .text');
+            const toggleIcon = document.querySelector('.theme-toggle .icon');
+            
+            if (newTheme === 'dark') {
+                toggleText.textContent = 'Light Mode';
+                toggleIcon.textContent = '☀️';
+            } else {
+                toggleText.textContent = 'Dark Mode';
+                toggleIcon.textContent = '🌙';
+            }
+        }
+
+        // Load saved theme on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            const savedTheme = localStorage.getItem('theme') || 'light';
+            document.documentElement.setAttribute('data-theme', savedTheme);
+            
+            const toggleText = document.querySelector('.theme-toggle .text');
+            const toggleIcon = document.querySelector('.theme-toggle .icon');
+            
+            if (savedTheme === 'dark') {
+                toggleText.textContent = 'Light Mode';
+                toggleIcon.textContent = '☀️';
+            } else {
+                toggleText.textContent = 'Dark Mode';
+                toggleIcon.textContent = '🌙';
+            }
+        });
+    </script>
+</body>
+</html>

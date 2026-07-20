@@ -1,57 +1,113 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Smart Music Player - SIV</title>
+    <title>Smart Music Player - SIV Digital</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body class="theme-music">
+    <div class="theme-toggle" onclick="toggleTheme()">
+        <span class="icon">🌓</span>
+        <span class="text">Toggle Theme</span>
+    </div>
+
     <header>
         <nav>
-            <a href="index.html" class="logo">SIV</a>
+            <a href="index.html" class="logo">SIV <span class="highlight">Digital</span></a>
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="dream-diary.html">Dream Diary</a></li>
                 <li><a href="data-desk.html">Data Desk</a></li>
+                <li><a href="about.html">About</a></li>
             </ul>
         </nav>
     </header>
 
-    <section class="product-header theme-music">
-        <div class="product-icon" style="background: linear-gradient(135deg, #00f5ff, #c026d3); color: #000; font-size: 6rem;">🎵</div>
-        <h1 style="font-size: 3rem; background: linear-gradient(90deg, #00f5ff, #c026d3); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Smart Music Player</h1>
-        <p style="font-size: 1.3rem; max-width: 600px; margin: 1rem auto;">Revolutionize your listening with AI-powered features and stunning visuals.</p>
+    <section class="product-header">
+        <div class="product-icon" style="background: var(--music-gradient);">
+            <img src="images/smart music player logo.png" alt="Smart Music Player">
+        </div>
+        <h1 style="background: var(--music-gradient); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Smart Music Player</h1>
+        <p>Revolutionize your listening experience with AI-powered features, stunning visualizers, and seamless performance.</p>
     </section>
 
     <section class="features">
         <div class="feature-card">
-            <h3>🎚️ Advanced Equalizer</h3>
-            <p>10-band customizable equalizer with presets for every genre.</p>
+            <h3>🎚️ Advanced 10-Band Equalizer</h3>
+            <p>Fine-tune your audio with professional-grade equalizer presets optimized for every music genre and listening environment.</p>
         </div>
         <div class="feature-card">
-            <h3>📴 Offline Playback</h3>
-            <p>Download your favorite tracks and enjoy without internet.</p>
+            <h3>📴 Seamless Offline Playback</h3>
+            <p>Download your favorite tracks and playlists for uninterrupted listening, even without an internet connection.</p>
         </div>
         <div class="feature-card">
-            <h3>🧠 Smart Playlists</h3>
-            <p>AI that learns your taste and auto-generates perfect playlists.</p>
+            <h3>🧠 AI-Powered Smart Playlists</h3>
+            <p>Machine learning algorithms that understand your taste and automatically generate the perfect playlists for any mood or activity.</p>
         </div>
         <div class="feature-card">
-            <h3>🌈 Visualizer</h3>
-            <p>Stunning real-time audio visualizers with glassmorphic effects.</p>
+            <h3>🌈 Stunning Audio Visualizers</h3>
+            <p>Immersive real-time visualizations with glassmorphic effects that respond dynamically to your music's rhythm and frequency.</p>
+        </div>
+        <div class="feature-card">
+            <h3>🎵 High-Quality Audio Engine</h3>
+            <p>Support for lossless audio formats with advanced audio processing for crystal-clear sound reproduction.</p>
+        </div>
+        <div class="feature-card">
+            <h3>🔄 Cross-Platform Sync</h3>
+            <p>Seamlessly sync your playlists, preferences, and listening history across all your devices.</p>
         </div>
     </section>
 
     <section class="download-section">
-        <h2>Get it on Google Play</h2>
-        <a href="#" style="display: inline-block; margin-top: 1rem; padding: 1rem 2rem; background: #000; color: white; border: 2px solid #00f5ff; border-radius: 12px; text-decoration: none; font-weight: bold;">📱 Download Now</a>
-        <p style="margin-top: 2rem; font-size: 0.9rem;">Also available on App Store soon.</p>
+        <h2>Available on Google Play</h2>
+        <a href="#" class="download-btn">📱 Download Smart Music Player</a>
+        <p style="margin-top: 2rem; color: var(--text-secondary);">Coming soon to App Store • Version 2.1.0</p>
     </section>
 
     <footer>
-        <p>&copy; 2026 Salem Innovative Ventures</p>
-        <p><a href="smart-music-player-privacy.html">Privacy Policy</a></p>
+        <p>&copy; 2026 SIV Digital - Salem Innovative Ventures</p>
+        <p><a href="smart-music-player-privacy.html">Privacy Policy</a> | <a href="index.html">Back to Home</a></p>
     </footer>
+
+    <script>
+        function toggleTheme() {
+            const html = document.documentElement;
+            const currentTheme = html.getAttribute('data-theme');
+            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+            
+            html.setAttribute('data-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+            
+            // Update toggle button text
+            const toggleText = document.querySelector('.theme-toggle .text');
+            const toggleIcon = document.querySelector('.theme-toggle .icon');
+            
+            if (newTheme === 'dark') {
+                toggleText.textContent = 'Light Mode';
+                toggleIcon.textContent = '☀️';
+            } else {
+                toggleText.textContent = 'Dark Mode';
+                toggleIcon.textContent = '🌙';
+            }
+        }
+
+        // Load saved theme on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            const savedTheme = localStorage.getItem('theme') || 'light';
+            document.documentElement.setAttribute('data-theme', savedTheme);
+            
+            const toggleText = document.querySelector('.theme-toggle .text');
+            const toggleIcon = document.querySelector('.theme-toggle .icon');
+            
+            if (savedTheme === 'dark') {
+                toggleText.textContent = 'Light Mode';
+                toggleIcon.textContent = '☀️';
+            } else {
+                toggleText.textContent = 'Dark Mode';
+                toggleIcon.textContent = '🌙';
+            }
+        });
+    </script>
 </body>
 </html>

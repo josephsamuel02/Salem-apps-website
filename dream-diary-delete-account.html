@@ -3,10 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SIV Digital - Salem Innovative Ventures</title>
+    <title>Delete Your Dream Diary Account - SIV Digital</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        .privacy-container ul, .privacy-container ol {
+            color: var(--text-secondary);
+            margin-bottom: 1.5rem;
+            padding-left: 2rem;
+            line-height: 1.8;
+        }
+        .privacy-container li {
+            margin-bottom: 0.5rem;
+        }
+    </style>
 </head>
-<body>
+<body class="theme-diary">
     <div class="theme-toggle" onclick="toggleTheme()">
         <span class="icon">🌓</span>
         <span class="text">Toggle Theme</span>
@@ -16,55 +27,52 @@
         <nav>
             <a href="index.html" class="logo">SIV <span class="highlight">Digital</span></a>
             <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
                 <li><a href="smart-music-player.html">Smart Music</a></li>
-                <li><a href="dream-diary.html">Dream Diary</a></li>
                 <li><a href="data-desk.html">Data Desk</a></li>
                 <li><a href="about.html">About</a></li>
             </ul>
         </nav>
     </header>
 
-    <section class="hero">
-        <div class="hero-content">
-            <div class="subtitle">Salem Innovative Ventures</div>
-            <h1>SIV Digital</h1>
-            <p>We craft premium mobile applications and digital solutions that transform how you create, manage, and experience your digital world. Innovation meets elegance in every product we build.</p>
-            <a href="#apps" class="cta-button">Explore Our Apps</a>
-        </div>
-    </section>
+    <main class="privacy-container">
+        <h1>Delete Your Dream Diary Account</h1>
+        
+        <p>You can permanently delete your Dream Diary account directly from within the app. Please note that account deletion is permanent and cannot be undone.</p>
+        
+        <h2>How to Delete Your Account</h2>
+        <ol>
+            <li>Open the Dream Diary app.</li>
+            <li>Sign in to your account.</li>
+            <li>Go to the Account page.</li>
+            <li>Scroll to the bottom of the page.</li>
+            <li>Tap <strong>Delete Account</strong>.</li>
+            <li>Read the confirmation message and tap <strong>Delete Account</strong> again to permanently delete your account.</li>
+        </ol>
 
-    <section id="apps" class="app-grid">
-        <div class="app-card music-theme">
-            <div class="app-icon">
-                <img src="images/smart music player logo.png" alt="Smart Music Player">
-            </div>
-            <h3>Smart Music Player</h3>
-            <p>Revolutionary music experience with AI-powered playlists, advanced equalizer, and stunning visualizers. Your music, reimagined.</p>
-            <a href="smart-music-player.html" class="btn">Learn More</a>
-        </div>
-        
-        <div class="app-card diary-theme">
-            <div class="app-icon">
-                <img src="images/Dream diary logo.png" alt="Dream Diary">
-            </div>
-            <h3>Dream Diary</h3>
-            <p>Capture, analyze, and interpret your dreams with beautiful journaling tools and AI-powered insights into your subconscious mind.</p>
-            <a href="dream-diary.html" class="btn">Learn More</a>
-        </div>
-        
-        <div class="app-card data-theme">
-            <div class="app-icon">
-                <img src="images/Data Desk logo.png" alt="Data Desk">
-            </div>
-            <h3>Data Desk</h3>
-            <p>Comprehensive productivity suite featuring powerful spreadsheets, data visualization, and collaborative project management tools.</p>
-            <a href="data-desk.html" class="btn">Learn More</a>
-        </div>
-    </section>
+        <h2>What Will Be Deleted</h2>
+        <p>The following data will be permanently removed:</p>
+        <ul>
+            <li>Account information</li>
+            <li>Profile information</li>
+            <li>Journal entries</li>
+            <li>Mood history</li>
+            <li>Images uploaded to journal entries</li>
+            <li>Audio recordings attached to journal entries</li>
+            <li>App preferences and settings</li>
+            <li>Any other personal data associated with the account</li>
+        </ul>
+
+        <h2>Data Retention</h2>
+        <p><em>Note: Some information may be retained where required by applicable law or for legitimate legal, security, or fraud prevention purposes.</em></p>
+
+        <h2>Need Help?</h2>
+        <p>If you encounter any issues while trying to delete your account or need further assistance, please contact our support team at <a href="mailto:support@sivdigital.com" style="color: var(--diary-primary);">support@sivdigital.com</a>.</p>
+    </main>
 
     <footer>
-        <p>&copy; 2026 SIV Digital - Salem Innovative Ventures. All Rights Reserved.</p>
-        <p><a href="about.html">About Us</a> | <a href="#">Contact</a> | <a href="#">Support</a></p>
+        <p>&copy; 2026 SIV Digital - Salem Innovative Ventures</p>
+        <p><a href="dream-diary-privacy.html">Privacy Policy</a> | <a href="dream-diary.html">Back to Dream Diary</a></p>
     </footer>
 
     <script>

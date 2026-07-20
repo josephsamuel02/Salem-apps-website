@@ -1,56 +1,113 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dream Diary - SIV</title>
+    <title>Dream Diary - SIV Digital</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body class="theme-diary">
+    <div class="theme-toggle" onclick="toggleTheme()">
+        <span class="icon">🌓</span>
+        <span class="text">Toggle Theme</span>
+    </div>
+
     <header>
         <nav>
-            <a href="index.html" class="logo">SIV</a>
+            <a href="index.html" class="logo">SIV <span class="highlight">Digital</span></a>
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="smart-music-player.html">Smart Music</a></li>
                 <li><a href="data-desk.html">Data Desk</a></li>
+                <li><a href="about.html">About</a></li>
             </ul>
         </nav>
     </header>
 
-    <section class="product-header theme-diary">
-        <div class="product-icon" style="background: linear-gradient(135deg, #f59e0b, #854d0e); color: #fff; font-size: 6rem;">📖</div>
-        <h1 style="font-size: 3rem; color: #f59e0b;">Dream Diary</h1>
-        <p style="font-size: 1.3rem; max-width: 600px; margin: 1rem auto;">Capture your dreams, uncover patterns, and find meaning in your subconscious.</p>
+    <section class="product-header">
+        <div class="product-icon" style="background: var(--diary-gradient);">
+            <img src="images/Dream diary logo.png" alt="Dream Diary">
+        </div>
+        <h1 style="color: var(--diary-primary); font-weight: 800;">Dream Diary</h1>
+        <p>Capture, analyze, and interpret your dreams with beautiful journaling tools and AI-powered insights into your subconscious mind.</p>
     </section>
 
     <section class="features">
         <div class="feature-card">
-            <h3>✍️ Beautiful Journaling</h3>
-            <p>Rich text editor with mood tracking and tags.</p>
+            <h3>✍️ Beautiful Rich Text Journaling</h3>
+            <p>Elegant writing experience with mood tracking, custom tags, and multimedia support for capturing every detail of your dreams.</p>
         </div>
         <div class="feature-card">
-            <h3>🌙 Sleep &amp; Dream Analytics</h3>
-            <p>Insights powered by your entries and optional wearable sync.</p>
+            <h3>🌙 Sleep & Dream Analytics</h3>
+            <p>Comprehensive insights powered by your entries with optional wearable device sync to correlate dreams with sleep patterns.</p>
         </div>
         <div class="feature-card">
-            <h3>🤖 AI Interpretation</h3>
-            <p>Contextual dream analysis using advanced language models.</p>
+            <h3>🤖 AI-Powered Dream Analysis</h3>
+            <p>Advanced language models provide contextual dream interpretation, pattern recognition, and symbolic meaning analysis.</p>
         </div>
         <div class="feature-card">
-            <h3>🔒 Private &amp; Secure</h3>
-            <p>End-to-end encrypted entries stored locally first.</p>
+            <h3>🔒 Privacy & Security First</h3>
+            <p>End-to-end encrypted entries stored locally first, with optional secure cloud backup that only you can access.</p>
+        </div>
+        <div class="feature-card">
+            <h3>📊 Pattern Recognition</h3>
+            <p>Discover recurring themes, symbols, and emotions in your dreams through intelligent data visualization and trend analysis.</p>
+        </div>
+        <div class="feature-card">
+            <h3>🎨 Personalization</h3>
+            <p>Customize your journaling experience with themes, fonts, and layouts that reflect your personal style and preferences.</p>
         </div>
     </section>
 
     <section class="download-section">
         <h2>Available on Google Play</h2>
-        <a href="#" style="display: inline-block; margin-top: 1rem; padding: 1rem 2rem; background: #f59e0b; color: #000; border-radius: 12px; text-decoration: none; font-weight: bold;">📱 Download Dream Diary</a>
+        <a href="#" class="download-btn">📱 Download Dream Diary</a>
+        <p style="margin-top: 2rem; color: var(--text-secondary);">Your dreams, your insights, your privacy • Version 1.5.2</p>
     </section>
 
     <footer>
-        <p>&copy; 2026 Salem Innovative Ventures</p>
-        <p><a href="dream-diary-privacy.html">Privacy Policy</a></p>
+        <p>&copy; 2026 SIV Digital - Salem Innovative Ventures</p>
+        <p><a href="dream-diary-privacy.html">Privacy Policy</a> | <a href="index.html">Back to Home</a></p>
     </footer>
+
+    <script>
+        function toggleTheme() {
+            const html = document.documentElement;
+            const currentTheme = html.getAttribute('data-theme');
+            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+            
+            html.setAttribute('data-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+            
+            // Update toggle button text
+            const toggleText = document.querySelector('.theme-toggle .text');
+            const toggleIcon = document.querySelector('.theme-toggle .icon');
+            
+            if (newTheme === 'dark') {
+                toggleText.textContent = 'Light Mode';
+                toggleIcon.textContent = '☀️';
+            } else {
+                toggleText.textContent = 'Dark Mode';
+                toggleIcon.textContent = '🌙';
+            }
+        }
+
+        // Load saved theme on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            const savedTheme = localStorage.getItem('theme') || 'light';
+            document.documentElement.setAttribute('data-theme', savedTheme);
+            
+            const toggleText = document.querySelector('.theme-toggle .text');
+            const toggleIcon = document.querySelector('.theme-toggle .icon');
+            
+            if (savedTheme === 'dark') {
+                toggleText.textContent = 'Light Mode';
+                toggleIcon.textContent = '☀️';
+            } else {
+                toggleText.textContent = 'Dark Mode';
+                toggleIcon.textContent = '🌙';
+            }
+        });
+    </script>
 </body>
 </html>

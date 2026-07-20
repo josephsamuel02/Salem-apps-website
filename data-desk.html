@@ -1,80 +1,113 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Data Desk - SIV</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body class="theme-data">
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Desk - SIV Digital</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="theme-data">
+    <div class="theme-toggle" onclick="toggleTheme()">
+        <span class="icon">🌓</span>
+        <span class="text">Toggle Theme</span>
+    </div>
+
     <header>
-      <nav>
-        <a href="index.html" class="logo">SIV</a>
-        <ul class="nav-links">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="smart-music-player.html">Smart Music</a></li>
-          <li><a href="dream-diary.html">Dream Diary</a></li>
-        </ul>
-      </nav>
+        <nav>
+            <a href="index.html" class="logo">SIV <span class="highlight">Digital</span></a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="smart-music-player.html">Smart Music</a></li>
+                <li><a href="dream-diary.html">Dream Diary</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <section class="product-header theme-data">
-      <div
-        class="product-icon"
-        style="
-          background: linear-gradient(135deg, #1e40af, #334155);
-          color: white;
-          font-size: 6rem;
-        "
-      >
-        📊
-      </div>
-      <h1 style="font-size: 3rem; color: #60a5fa">Data Desk</h1>
-      <p style="font-size: 1.3rem; max-width: 600px; margin: 1rem auto">
-        Your all-in-one productivity workspace for data, spreadsheets, and dashboards.
-      </p>
+    <section class="product-header">
+        <div class="product-icon" style="background: var(--data-gradient);">
+            <img src="images/Data Desk logo.png" alt="Data Desk">
+        </div>
+        <h1 style="color: var(--data-primary); font-weight: 800;">Data Desk</h1>
+        <p>Your comprehensive productivity workspace featuring powerful spreadsheets, data visualization, and collaborative project management tools.</p>
     </section>
 
     <section class="features">
-      <div class="feature-card">
-        <h3>📈 Advanced Spreadsheets</h3>
-        <p>Formulas, charts, and collaborative editing.</p>
-      </div>
-      <div class="feature-card">
-        <h3>📋 Project Dashboards</h3>
-        <p>Real-time visualizations and KPI tracking.</p>
-      </div>
-      <div class="feature-card">
-        <h3>🔄 Data Import/Export</h3>
-        <p>Seamless CSV, Excel, and API integrations.</p>
-      </div>
-      <div class="feature-card">
-        <h3>🛡️ Enterprise Security</h3>
-        <p>Role-based access and audit logs.</p>
-      </div>
+        <div class="feature-card">
+            <h3>📈 Advanced Spreadsheet Engine</h3>
+            <p>Professional-grade spreadsheet capabilities with complex formulas, pivot tables, and real-time collaborative editing for teams.</p>
+        </div>
+        <div class="feature-card">
+            <h3>📋 Interactive Project Dashboards</h3>
+            <p>Create stunning real-time visualizations, KPI tracking, and customizable dashboards that update automatically with your data.</p>
+        </div>
+        <div class="feature-card">
+            <h3>🔄 Universal Data Integration</h3>
+            <p>Seamless import/export support for CSV, Excel, Google Sheets, and direct API connections to popular business tools.</p>
+        </div>
+        <div class="feature-card">
+            <h3>🛡️ Enterprise-Grade Security</h3>
+            <p>Role-based access controls, comprehensive audit logs, and bank-level encryption to keep your business data secure.</p>
+        </div>
+        <div class="feature-card">
+            <h3>📊 Smart Data Analysis</h3>
+            <p>AI-powered insights, automated trend detection, and intelligent suggestions to help you make data-driven decisions faster.</p>
+        </div>
+        <div class="feature-card">
+            <h3>☁️ Cloud-First Architecture</h3>
+            <p>Work from anywhere with automatic sync, offline capabilities, and seamless cross-platform compatibility.</p>
+        </div>
     </section>
 
     <section class="download-section">
-      <h2>Try Data Desk</h2>
-      <a
-        href="#"
-        style="
-          display: inline-block;
-          margin-top: 1rem;
-          padding: 1rem 2rem;
-          background: #1e40af;
-          color: white;
-          border-radius: 12px;
-          text-decoration: none;
-          font-weight: bold;
-        "
-        >Get Started Free</a
-      >
+        <h2>Get Started with Data Desk</h2>
+        <a href="#" class="download-btn">🚀 Start Free Trial</a>
+        <p style="margin-top: 2rem; color: var(--text-secondary);">14-day free trial • No credit card required • Enterprise plans available</p>
     </section>
 
     <footer>
-      <p>&copy; 2026 Salem Innovative Ventures</p>
-      <p><a href="data-desk-privacy.html">Privacy Policy</a></p>
+        <p>&copy; 2026 SIV Digital - Salem Innovative Ventures</p>
+        <p><a href="data-desk-privacy.html">Privacy Policy</a> | <a href="index.html">Back to Home</a></p>
     </footer>
-  </body>
+
+    <script>
+        function toggleTheme() {
+            const html = document.documentElement;
+            const currentTheme = html.getAttribute('data-theme');
+            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+            
+            html.setAttribute('data-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+            
+            // Update toggle button text
+            const toggleText = document.querySelector('.theme-toggle .text');
+            const toggleIcon = document.querySelector('.theme-toggle .icon');
+            
+            if (newTheme === 'dark') {
+                toggleText.textContent = 'Light Mode';
+                toggleIcon.textContent = '☀️';
+            } else {
+                toggleText.textContent = 'Dark Mode';
+                toggleIcon.textContent = '🌙';
+            }
+        }
+
+        // Load saved theme on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            const savedTheme = localStorage.getItem('theme') || 'light';
+            document.documentElement.setAttribute('data-theme', savedTheme);
+            
+            const toggleText = document.querySelector('.theme-toggle .text');
+            const toggleIcon = document.querySelector('.theme-toggle .icon');
+            
+            if (savedTheme === 'dark') {
+                toggleText.textContent = 'Light Mode';
+                toggleIcon.textContent = '☀️';
+            } else {
+                toggleText.textContent = 'Dark Mode';
+                toggleIcon.textContent = '🌙';
+            }
+        });
+    </script>
+</body>
 </html>
