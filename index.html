@@ -1,110 +1,224 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SIV Digital - Salem Innovative Ventures</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SIV Digital Salem Innovative Ventures</title>
+  <meta name="description" content="SIV Digital crafts premium mobile applications and digital solutions. Smart Music Player, Dream Diary, Data Desk, Status Saver for WhatsApp.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="images/Salem inovative ventures logo.png">
 </head>
 <body>
-    <div class="theme-toggle" onclick="toggleTheme()">
-        <span class="icon">🌓</span>
-        <span class="text">Toggle Theme</span>
+  <header id="site-header">
+    <nav aria-label="Primary">
+      <a href="index.html" class="logo" aria-label="SIV Digital home">
+        <img src="images/Salem inovative ventures logo.png" alt="Salem Innovative Ventures logo">
+        <span><strong>SIV</strong> DIGITAL</span>
+      </a>
+
+      <ul class="nav-links" role="list">
+        <li><a href="smart-music-player.html">Smart Music</a></li>
+        <li><a href="dream-diary.html">Dream Diary</a></li>
+        <li><a href="data-desk.html">Data Desk</a></li>
+        <li><a href="status-saver.html">Status Saver</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button class="icon-btn desktop-only" id="themeBtn" aria-label="Toggle theme" onclick="toggleTheme()">
+          <span id="themeIcon">◑</span>
+        </button>
+        <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false" onclick="toggleMenu()">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <div class="mobile-nav" id="mobileNav" aria-hidden="true">
+    <a href="smart-music-player.html">Smart Music Player <small>→</small></a>
+    <a href="dream-diary.html">Dream Diary <small>→</small></a>
+    <a href="data-desk.html">Data Desk <small>→</small></a>
+    <a href="status-saver.html">Status Saver <small>→</small></a>
+    <a href="about.html">About SIV Digital <small>→</small></a>
+    <div style="display:flex; gap:12px; margin-top:12px;">
+      <button class="btn btn-secondary" style="flex:1;" onclick="toggleTheme()">Toggle Theme</button>
+      <a href="#apps" class="btn btn-primary" style="flex:1;" onclick="closeMenu()">Explore Apps</a>
     </div>
+  </div>
 
-    <header>
-        <nav>
-            <a href="index.html" class="logo">SIV <span class="highlight">Digital</span></a>
-            <ul class="nav-links">
-                <li><a href="smart-music-player.html">Smart Music</a></li>
-                <li><a href="dream-diary.html">Dream Diary</a></li>
-                <li><a href="data-desk.html">Data Desk</a></li>
-                <li><a href="about.html">About</a></li>
-            </ul>
-        </nav>
-    </header>
+  <section class="hero">
+    <div class="hero-content">
+      <div class="eyebrow">Salem Innovative Ventures Est. 2026</div>
+      <h1>Software crafted<br><em>like hardware.</em></h1>
+      <p>We design premium mobile applications with the precision, performance and restraint of world class products. No clutter. No gimmicks. Just essential tools that work beautifully.</p>
+      <div class="hero-actions">
+        <a href="#apps" class="btn btn-primary">Explore Apps</a>
+        <a href="about.html" class="btn btn-secondary">Our Philosophy</a>
+      </div>
+      <div class="hero-meta" aria-label="Company stats">
+        <div><strong>4</strong><span>Flagship Apps</span></div>
+        <div><strong>1M+</strong><span>Downloads</span></div>
+        <div><strong>4.8★</strong><span>Average Rating</span></div>
+        <div><strong>100%</strong><span>Privacy First</span></div>
+      </div>
+    </div>
+    <div class="scroll-hint" aria-hidden="true"><span>Scroll</span><i></i></div>
+  </section>
 
-    <section class="hero">
-        <div class="hero-content">
-            <div class="subtitle">Salem Innovative Ventures</div>
-            <h1>SIV Digital</h1>
-            <p>We craft premium mobile applications and digital solutions that transform how you create, manage, and experience your digital world. Innovation meets elegance in every product we build.</p>
-            <a href="#apps" class="cta-button">Explore Our Apps</a>
+  <div class="section-label" id="apps"><h2>Flagship Products</h2></div>
+
+  <section class="app-grid" aria-label="Apps">
+    <!-- Smart Music Player -->
+    <article class="app-card">
+      <div class="badge">Offline • Audio</div>
+      <div class="app-visual">
+        <img src="images/smart music player logo.png" alt="Smart Music Player logo" loading="lazy">
+      </div>
+      <div class="app-card-body">
+        <h3><span>01 Smart Music Player</span>Your music. Offline.</h3>
+        <p>Lightweight offline player for local files. 10 band EQ, folder browsing, gapless playback. No streaming, no internet needed.</p>
+        <div class="card-actions">
+          <a href="smart-music-player.html" class="btn btn-primary">Learn More</a>
+          <a href="https://play.google.com/store/apps/details?id=com.smartmusicplayer.app" target="_blank" rel="noopener" class="btn btn-secondary">Get App</a>
         </div>
-    </section>
+      </div>
+    </article>
 
-    <section id="apps" class="app-grid">
-        <div class="app-card music-theme">
-            <div class="app-icon">
-                <img src="images/smart music player logo.png" alt="Smart Music Player">
-            </div>
-            <h3>Smart Music Player</h3>
-            <p>Revolutionary music experience with AI-powered playlists, advanced equalizer, and stunning visualizers. Your music, reimagined.</p>
-            <a href="smart-music-player.html" class="btn">Learn More</a>
+    <!-- Dream Diary -->
+    <article class="app-card">
+      <div class="badge">Diary • Voice • Mood</div>
+      <div class="app-visual">
+        <img src="images/Dream diary logo.png" alt="Dream Diary logo" loading="lazy">
+      </div>
+      <div class="app-card-body">
+        <h3><span>02 Dream Diary</span>Your private diary.</h3>
+        <p>Text, voice recordings, images & camera, mood tracker, quotes, reminders and custom themes & backgrounds. No AI.</p>
+        <div class="card-actions">
+          <a href="dream-diary.html" class="btn btn-primary">Learn More</a>
+          <a href="https://play.google.com/store/apps/details?id=com.dreamdiary.app" target="_blank" rel="noopener" class="btn btn-secondary">Get App</a>
         </div>
-        
-        <div class="app-card diary-theme">
-            <div class="app-icon">
-                <img src="images/Dream diary logo.png" alt="Dream Diary">
-            </div>
-            <h3>Dream Diary</h3>
-            <p>Capture, analyze, and interpret your dreams with beautiful journaling tools and AI-powered insights into your subconscious mind.</p>
-            <a href="dream-diary.html" class="btn">Learn More</a>
+      </div>
+    </article>
+
+    <!-- Data Desk -->
+    <article class="app-card">
+      <div class="badge">Free Data • Browsing</div>
+      <div class="app-visual">
+        <img src="images/Data Desk logo.png" alt="Data Desk logo" loading="lazy">
+      </div>
+      <div class="app-card-body">
+        <h3><span>03 Data Desk</span>Free data for browsing.</h3>
+        <p>Earn mobile data for everyday browsing. Complete simple tasks, check in daily and get instant data top ups.</p>
+        <div class="card-actions">
+          <a href="data-desk.html" class="btn btn-primary">Learn More</a>
+          <a href="data-desk.html#download" class="btn btn-secondary">Get App</a>
         </div>
-        
-        <div class="app-card data-theme">
-            <div class="app-icon">
-                <img src="images/Data Desk logo.png" alt="Data Desk">
-            </div>
-            <h3>Data Desk</h3>
-            <p>Comprehensive productivity suite featuring powerful spreadsheets, data visualization, and collaborative project management tools.</p>
-            <a href="data-desk.html" class="btn">Learn More</a>
+      </div>
+    </article>
+
+    <!-- Status Saver -->
+    <article class="app-card">
+      <div class="badge">WhatsApp • Media</div>
+      <div class="app-visual">
+        <img src="images/Status Saver.png" alt="Status Saver logo" loading="lazy">
+      </div>
+      <div class="app-card-body">
+        <h3><span>04 Status Saver</span>Save WhatsApp statuses.</h3>
+        <p>Download images and videos from WhatsApp statuses in one tap. Save to gallery and share anywhere.</p>
+        <div class="card-actions">
+          <a href="status-saver.html" class="btn btn-primary">Learn More</a>
+          <a href="status-saver.html#download" class="btn btn-secondary">Get App</a>
         </div>
-    </section>
+      </div>
+    </article>
+  </section>
 
-    <footer>
-        <p>&copy; 2026 SIV Digital - Salem Innovative Ventures. All Rights Reserved.</p>
-        <p><a href="about.html">About Us</a> | <a href="#">Contact</a> | <a href="#">Support</a></p>
-    </footer>
+  <!-- About SIV Creative software studio -->
+  <hr class="divider">
+  <section class="product-hero">
+    <div class="product-copy">
+      <div class="eyebrow">Creative Software Studio</div>
+      <h1>We build software<br><span>that solves.</span></h1>
+      <p>SIV Digital is a creative software company from Salem. We design and build apps that solve real problems helping people create, save, manage and share with ease. From idea to launch, we turn challenges into simple, reliable solutions.</p>
+      <div class="product-stats">
+        <div><strong>4+</strong><span>Apps Launched</span></div>
+        <div><strong>End to End</strong><span>Solutions</span></div>
+        <div><strong>Built in</strong><span>Salem</span></div>
+      </div>
+      <div style="display:flex; gap:12px; flex-wrap:wrap;">
+        <a href="about.html" class="btn btn-primary">Meet SIV Digital</a>
+        <a href="about.html#values" class="btn btn-secondary">Our Values</a>
+      </div>
+    </div>
+    <div class="product-visual" aria-hidden="true">
+      <img src="images/Salem inovative ventures logo.png" alt="Salem Innovative Ventures logo large">
+    </div>
+  </section>
 
-    <script>
-        function toggleTheme() {
-            const html = document.documentElement;
-            const currentTheme = html.getAttribute('data-theme');
-            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
-            
-            html.setAttribute('data-theme', newTheme);
-            localStorage.setItem('theme', newTheme);
-            
-            // Update toggle button text
-            const toggleText = document.querySelector('.theme-toggle .text');
-            const toggleIcon = document.querySelector('.theme-toggle .icon');
-            
-            if (newTheme === 'dark') {
-                toggleText.textContent = 'Light Mode';
-                toggleIcon.textContent = '☀️';
-            } else {
-                toggleText.textContent = 'Dark Mode';
-                toggleIcon.textContent = '🌙';
-            }
-        }
+  <footer>
+    <div class="footer-inner">
+      <div class="logo" style="justify-content:center;">
+        <img src="images/Salem inovative ventures logo.png" alt="" style="width:28px;height:28px;">
+        <span><strong>SIV</strong> DIGITAL</span>
+      </div>
+      <div class="footer-links">
+        <a href="smart-music-player.html">Smart Music</a>
+        <a href="dream-diary.html">Dream Diary</a>
+        <a href="data-desk.html">Data Desk</a>
+        <a href="status-saver.html">Status Saver</a>
+        <a href="about.html">About</a>
+        <a href="mailto:support@sivdigital.com">Support</a>
+      </div>
+      <p><strong>© 2026 Salem Innovative Ventures.</strong> Crafted with precision. All rights reserved.<br>Privacy first • Performance obsessed • Designed in Salem.</p>
+    </div>
+  </footer>
 
-        // Load saved theme on page load
-        document.addEventListener('DOMContentLoaded', function() {
-            const savedTheme = localStorage.getItem('theme') || 'light';
-            document.documentElement.setAttribute('data-theme', savedTheme);
-            
-            const toggleText = document.querySelector('.theme-toggle .text');
-            const toggleIcon = document.querySelector('.theme-toggle .icon');
-            
-            if (savedTheme === 'dark') {
-                toggleText.textContent = 'Light Mode';
-                toggleIcon.textContent = '☀️';
-            } else {
-                toggleText.textContent = 'Dark Mode';
-                toggleIcon.textContent = '🌙';
-            }
-        });
-    </script>
+  <script>
+    function toggleTheme(){
+      const html=document.documentElement;
+      const next=html.getAttribute('data-theme')==='dark'?'light':'dark';
+      html.setAttribute('data-theme',next);
+      localStorage.setItem('theme',next);
+      updateThemeIcon(next);
+    }
+    function updateThemeIcon(theme){
+      const el=document.getElementById('themeIcon');
+      if(!el) return;
+      el.textContent= theme==='dark' ? '☀' : '◑';
+    }
+    function toggleMenu(){
+      const btn=document.getElementById('menuToggle');
+      const nav=document.getElementById('mobileNav');
+      const open=btn.classList.toggle('open');
+      nav.classList.toggle('open', open);
+      btn.setAttribute('aria-expanded', open);
+      nav.setAttribute('aria-hidden', !open);
+      document.body.style.overflow=open?'hidden':'';
+    }
+    function closeMenu(){
+      const btn=document.getElementById('menuToggle');
+      const nav=document.getElementById('mobileNav');
+      btn.classList.remove('open');
+      nav.classList.remove('open');
+      btn.setAttribute('aria-expanded','false');
+      nav.setAttribute('aria-hidden','true');
+      document.body.style.overflow='';
+    }
+    document.addEventListener('DOMContentLoaded',()=>{
+      const saved=localStorage.getItem('theme')||'light';
+      document.documentElement.setAttribute('data-theme',saved);
+      updateThemeIcon(saved);
+      const header=document.getElementById('site-header');
+      window.addEventListener('scroll',()=>{
+        header.classList.toggle('scrolled', window.scrollY>8);
+      },{passive:true});
+    });
+    // close mobile nav on resize to desktop
+    window.addEventListener('resize',()=>{ if(window.innerWidth>640) closeMenu(); });
+  </script>
 </body>
 </html>
+
+

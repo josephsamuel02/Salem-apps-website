@@ -1,113 +1,130 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Smart Music Player - SIV Digital</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart Music Player SIV Digital</title>
+  <meta name="description" content="Smart Music Player by SIV Digital. Lightweight offline music player with 10-band EQ, folder browsing and gapless playback.">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="images/smart music player logo.png">
 </head>
-<body class="theme-music">
-    <div class="theme-toggle" onclick="toggleTheme()">
-        <span class="icon">🌓</span>
-        <span class="text">Toggle Theme</span>
+<body>
+  <header id="site-header">
+    <nav aria-label="Primary">
+      <a href="index.html" class="logo">
+        <img src="images/Salem inovative ventures logo.png" alt="Salem Innovative Ventures logo">
+        <span><strong>SIV</strong> DIGITAL</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a class="active" href="smart-music-player.html">Smart Music</a></li>
+        <li><a href="dream-diary.html">Dream Diary</a></li>
+        <li><a href="data-desk.html">Data Desk</a></li>
+        <li><a href="status-saver.html">Status Saver</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="icon-btn desktop-only" aria-label="Toggle theme" onclick="toggleTheme()"><span id="themeIcon">◑</span></button>
+        <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false" onclick="toggleMenu()"><span></span><span></span><span></span></button>
+      </div>
+    </nav>
+  </header>
+
+  <div class="mobile-nav" id="mobileNav" aria-hidden="true">
+    <a href="index.html">Home <small>→</small></a>
+    <a href="smart-music-player.html">Smart Music Player <small>• Current</small></a>
+    <a href="dream-diary.html">Dream Diary <small>→</small></a>
+    <a href="data-desk.html">Data Desk <small>→</small></a>
+    <a href="status-saver.html">Status Saver <small>→</small></a>
+    <a href="about.html">About <small>→</small></a>
+    <div style="display:flex; gap:12px; margin-top:12px;">
+      <button class="btn btn-secondary" style="flex:1;" onclick="toggleTheme()">Toggle Theme</button>
+      <a href="#download" class="btn btn-primary" style="flex:1;" onclick="closeMenu()">Download</a>
     </div>
+  </div>
 
-    <header>
-        <nav>
-            <a href="index.html" class="logo">SIV <span class="highlight">Digital</span></a>
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="dream-diary.html">Dream Diary</a></li>
-                <li><a href="data-desk.html">Data Desk</a></li>
-                <li><a href="about.html">About</a></li>
-            </ul>
-        </nav>
-    </header>
+  <section class="product-hero">
+    <div class="product-copy">
+      <div class="eyebrow">01 Offline Audio</div>
+      <h1>Smart Music <span>Player</span></h1>
+      <p>Pure offline player for your local library. No streaming, no AI, no tracking. Just fast folder browsing, powerful sound control and gapless playback for music already on your device.</p>
+      <div class="product-stats">
+        <div><strong>100%</strong><span>Offline</span></div>
+        <div><strong>10 Band</strong><span>Equalizer</span></div>
+        <div><strong>18 MB</strong><span>Lightweight</span></div>
+      </div>
+      <div style="display:flex; gap:12px; flex-wrap:wrap;">
+        <a href="https://play.google.com/store/apps/details?id=com.smartmusicplayer.app" target="_blank" rel="noopener" class="btn btn-primary">Download App</a>
+        <a href="#features" class="btn btn-secondary">View Features</a>
+      </div>
+      <p style="font-size:12px; color:var(--text-tertiary); margin-top:12px;">Version 2.1.0 • Android • Coming soon to iOS</p>
+    </div>
+    <div class="product-visual">
+      <img src="images/smart music player logo.png" alt="Smart Music Player logo large">
+    </div>
+  </section>
 
-    <section class="product-header">
-        <div class="product-icon" style="background: var(--music-gradient);">
-            <img src="images/smart music player logo.png" alt="Smart Music Player">
-        </div>
-        <h1 style="background: var(--music-gradient); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Smart Music Player</h1>
-        <p>Revolutionize your listening experience with AI-powered features, stunning visualizers, and seamless performance.</p>
-    </section>
+  <div class="section-label" id="features"><h2>Built For Local Music</h2></div>
+  <section class="features" aria-label="Features">
+    <div class="feature-card">
+      <h3><i>◫</i> 10 Band Equalizer</h3>
+      <p>Presets for every genre plus bass boost, virtualizer and manual control. Every tweak applies instantly with zero latency.</p>
+    </div>
+    <div class="feature-card">
+      <h3><i>▭</i> Folder Browsing</h3>
+      <p>Browse by folders, artists, albums or files. Directly scan device storage no hidden library, no cloud.</p>
+    </div>
+    <div class="feature-card">
+      <h3><i>◎</i> Gapless & Crossfade</h3>
+      <p>Seamless transitions between tracks, adjustable crossfade and background playback that respects battery.</p>
+    </div>
+    <div class="feature-card">
+      <h3><i>⬢</i> Offline Only</h3>
+      <p>Works entirely offline. No internet permission needed for playback. Your files never leave your phone.</p>
+    </div>
+    <div class="feature-card">
+      <h3><i>⬣</i> All Formats</h3>
+      <p>MP3, FLAC, WAV, AAC, OGG and more. High quality decoding with lyrics (LRC) and tag editing.</p>
+    </div>
+    <div class="feature-card">
+      <h3><i>◐</i> Light & Private</h3>
+      <p>Under 18 MB, fast launch, sleep timer, ringtone cutter and no trackers. Private by design.</p>
+    </div>
+  </section>
 
-    <section class="features">
-        <div class="feature-card">
-            <h3>🎚️ Advanced 10-Band Equalizer</h3>
-            <p>Fine-tune your audio with professional-grade equalizer presets optimized for every music genre and listening environment.</p>
-        </div>
-        <div class="feature-card">
-            <h3>📴 Seamless Offline Playback</h3>
-            <p>Download your favorite tracks and playlists for uninterrupted listening, even without an internet connection.</p>
-        </div>
-        <div class="feature-card">
-            <h3>🧠 AI-Powered Smart Playlists</h3>
-            <p>Machine learning algorithms that understand your taste and automatically generate the perfect playlists for any mood or activity.</p>
-        </div>
-        <div class="feature-card">
-            <h3>🌈 Stunning Audio Visualizers</h3>
-            <p>Immersive real-time visualizations with glassmorphic effects that respond dynamically to your music's rhythm and frequency.</p>
-        </div>
-        <div class="feature-card">
-            <h3>🎵 High-Quality Audio Engine</h3>
-            <p>Support for lossless audio formats with advanced audio processing for crystal-clear sound reproduction.</p>
-        </div>
-        <div class="feature-card">
-            <h3>🔄 Cross-Platform Sync</h3>
-            <p>Seamlessly sync your playlists, preferences, and listening history across all your devices.</p>
-        </div>
-    </section>
+  <section class="download-section" id="download">
+    <h2>Listen without limits.</h2>
+    <p>Free to download. No account required. Your music stays on your device.</p>
+    <div class="download-actions">
+      <a href="https://play.google.com/store/apps/details?id=com.smartmusicplayer.app" target="_blank" rel="noopener" class="btn btn-primary">Get on Google Play</a>
+      <a href="smart-music-player-privacy.html" class="btn btn-secondary">Privacy Policy</a>
+    </div>
+    <p style="margin-top:16px; font-size:12px; opacity:0.7;">Also available as APK direct download • 18 MB</p>
+  </section>
 
-    <section class="download-section">
-        <h2>Available on Google Play</h2>
-        <a href="#" class="download-btn">📱 Download Smart Music Player</a>
-        <p style="margin-top: 2rem; color: var(--text-secondary);">Coming soon to App Store • Version 2.1.0</p>
-    </section>
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="dream-diary.html">Dream Diary</a>
+        <a href="data-desk.html">Data Desk</a>
+        <a href="status-saver.html">Status Saver</a>
+        <a href="smart-music-player-privacy.html">Privacy</a>
+        <a href="about.html">About</a>
+      </div>
+      <p><strong>© 2026 SIV Digital.</strong> Smart Music Player is part of the Salem Innovative Ventures collection.</p>
+    </div>
+  </footer>
 
-    <footer>
-        <p>&copy; 2026 SIV Digital - Salem Innovative Ventures</p>
-        <p><a href="smart-music-player-privacy.html">Privacy Policy</a> | <a href="index.html">Back to Home</a></p>
-    </footer>
-
-    <script>
-        function toggleTheme() {
-            const html = document.documentElement;
-            const currentTheme = html.getAttribute('data-theme');
-            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
-            
-            html.setAttribute('data-theme', newTheme);
-            localStorage.setItem('theme', newTheme);
-            
-            // Update toggle button text
-            const toggleText = document.querySelector('.theme-toggle .text');
-            const toggleIcon = document.querySelector('.theme-toggle .icon');
-            
-            if (newTheme === 'dark') {
-                toggleText.textContent = 'Light Mode';
-                toggleIcon.textContent = '☀️';
-            } else {
-                toggleText.textContent = 'Dark Mode';
-                toggleIcon.textContent = '🌙';
-            }
-        }
-
-        // Load saved theme on page load
-        document.addEventListener('DOMContentLoaded', function() {
-            const savedTheme = localStorage.getItem('theme') || 'light';
-            document.documentElement.setAttribute('data-theme', savedTheme);
-            
-            const toggleText = document.querySelector('.theme-toggle .text');
-            const toggleIcon = document.querySelector('.theme-toggle .icon');
-            
-            if (savedTheme === 'dark') {
-                toggleText.textContent = 'Light Mode';
-                toggleIcon.textContent = '☀️';
-            } else {
-                toggleText.textContent = 'Dark Mode';
-                toggleIcon.textContent = '🌙';
-            }
-        });
-    </script>
+  <script>
+    function toggleTheme(){ const h=document.documentElement; const n=h.getAttribute('data-theme')==='dark'?'light':'dark'; h.setAttribute('data-theme',n); localStorage.setItem('theme',n); updateIcon(n); }
+    function updateIcon(t){ const e=document.getElementById('themeIcon'); if(e) e.textContent=t==='dark'?'☀':'◑'; }
+    function toggleMenu(){ const b=document.getElementById('menuToggle'); const n=document.getElementById('mobileNav'); const o=b.classList.toggle('open'); n.classList.toggle('open',o); b.setAttribute('aria-expanded',o); n.setAttribute('aria-hidden',!o); document.body.style.overflow=o?'hidden':''; }
+    function closeMenu(){ const b=document.getElementById('menuToggle'); const n=document.getElementById('mobileNav'); b.classList.remove('open'); n.classList.remove('open'); b.setAttribute('aria-expanded','false'); n.setAttribute('aria-hidden','true'); document.body.style.overflow=''; }
+    document.addEventListener('DOMContentLoaded',()=>{ const s=localStorage.getItem('theme')||'light'; document.documentElement.setAttribute('data-theme',s); updateIcon(s); const hdr=document.getElementById('site-header'); window.addEventListener('scroll',()=>hdr.classList.toggle('scrolled',scrollY>8),{passive:true}); });
+    window.addEventListener('resize',()=>{ if(innerWidth>640) closeMenu(); });
+  </script>
 </body>
 </html>
+
+

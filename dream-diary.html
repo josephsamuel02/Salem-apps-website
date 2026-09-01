@@ -1,113 +1,130 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dream Diary - SIV Digital</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dream Diary Private Diary with Voice, Mood & Themes SIV Digital</title>
+  <meta name="description" content="Dream Diary by SIV Digital. Text, voice recordings, images, mood tracker, camera capture, quotes, reminders and custom themes.">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="images/Dream diary logo.png">
 </head>
-<body class="theme-diary">
-    <div class="theme-toggle" onclick="toggleTheme()">
-        <span class="icon">🌓</span>
-        <span class="text">Toggle Theme</span>
+<body>
+  <header id="site-header">
+    <nav aria-label="Primary">
+      <a href="index.html" class="logo">
+        <img src="images/Salem inovative ventures logo.png" alt="Salem Innovative Ventures logo">
+        <span><strong>SIV</strong> DIGITAL</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="smart-music-player.html">Smart Music</a></li>
+        <li><a class="active" href="dream-diary.html">Dream Diary</a></li>
+        <li><a href="data-desk.html">Data Desk</a></li>
+        <li><a href="status-saver.html">Status Saver</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="icon-btn desktop-only" aria-label="Toggle theme" onclick="toggleTheme()"><span id="themeIcon">◑</span></button>
+        <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false" onclick="toggleMenu()"><span></span><span></span><span></span></button>
+      </div>
+    </nav>
+  </header>
+
+  <div class="mobile-nav" id="mobileNav" aria-hidden="true">
+    <a href="index.html">Home <small>→</small></a>
+    <a href="smart-music-player.html">Smart Music <small>→</small></a>
+    <a href="dream-diary.html">Dream Diary <small>• Current</small></a>
+    <a href="data-desk.html">Data Desk <small>→</small></a>
+    <a href="status-saver.html">Status Saver <small>→</small></a>
+    <a href="about.html">About <small>→</small></a>
+    <div style="display:flex; gap:12px; margin-top:12px;">
+      <button class="btn btn-secondary" style="flex:1;" onclick="toggleTheme()">Toggle Theme</button>
+      <a href="#download" class="btn btn-primary" style="flex:1;" onclick="closeMenu()">Download</a>
     </div>
+  </div>
 
-    <header>
-        <nav>
-            <a href="index.html" class="logo">SIV <span class="highlight">Digital</span></a>
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="smart-music-player.html">Smart Music</a></li>
-                <li><a href="data-desk.html">Data Desk</a></li>
-                <li><a href="about.html">About</a></li>
-            </ul>
-        </nav>
-    </header>
+  <section class="product-hero reverse">
+    <div class="product-copy">
+      <div class="eyebrow">02 Private Diary</div>
+      <h1>Dream <span>Diary</span></h1>
+      <p>A private diary made for dreams. Write with text, attach voice recordings and images, capture from camera, track your mood and personalize with themes & backgrounds. No AI. Just your thoughts.</p>
+      <div class="product-stats">
+        <div><strong>Voice</strong><span>+ Text + Images</span></div>
+        <div><strong>Mood</strong><span>Tracker</span></div>
+        <div><strong>Themes</strong><span> & Backgrounds</span></div>
+      </div>
+      <div style="display:flex; gap:12px; flex-wrap:wrap;">
+        <a href="https://play.google.com/store/apps/details?id=com.dreamdiary.app" target="_blank" rel="noopener" class="btn btn-primary">Download App</a>
+        <a href="#features" class="btn btn-secondary">Explore Features</a>
+      </div>
+      <p style="font-size:12px; color:var(--text-tertiary); margin-top:12px;">Version 1.5.2 • Android • 100% Private • Offline First</p>
+    </div>
+    <div class="product-visual">
+      <img src="images/Dream diary logo.png" alt="Dream Diary logo large">
+    </div>
+  </section>
 
-    <section class="product-header">
-        <div class="product-icon" style="background: var(--diary-gradient);">
-            <img src="images/Dream diary logo.png" alt="Dream Diary">
-        </div>
-        <h1 style="color: var(--diary-primary); font-weight: 800;">Dream Diary</h1>
-        <p>Capture, analyze, and interpret your dreams with beautiful journaling tools and AI-powered insights into your subconscious mind.</p>
-    </section>
+  <div class="section-label" id="features"><h2>Everything in your diary</h2></div>
+  <section class="features">
+    <div class="feature-card">
+      <h3><i>✎</i> Text & Voice Input</h3>
+      <p>Write rich text entries or record voice directly. Add audio notes to capture dreams exactly as you remember them.</p>
+    </div>
+    <div class="feature-card">
+      <h3><i>◐</i> Images & Camera Capture</h3>
+      <p>Attach images from gallery or capture instantly with camera. Keep sketches, screenshots or photos alongside your entry.</p>
+    </div>
+    <div class="feature-card">
+      <h3><i>◍</i> Mood Tracker</h3>
+      <p>Tag each entry with your mood. See patterns over time on a clean, monochrome timeline.</p>
+    </div>
+    <div class="feature-card">
+      <h3><i>◎</i> Inspirational Quotes</h3>
+      <p>Start each day with a curated inspirational quote on your home screen minimal and uplifting.</p>
+    </div>
+    <div class="feature-card">
+      <h3><i>⬢</i> Reminders</h3>
+      <p>Gentle daily reminders so you never forget to journal. Set your own time, quiet hours included.</p>
+    </div>
+    <div class="feature-card">
+      <h3><i>▣</i> Themes & Backgrounds</h3>
+      <p>Personalize with light/dark themes and custom backgrounds. Change colors and styles to match your mood.</p>
+    </div>
+  </section>
 
-    <section class="features">
-        <div class="feature-card">
-            <h3>✍️ Beautiful Rich Text Journaling</h3>
-            <p>Elegant writing experience with mood tracking, custom tags, and multimedia support for capturing every detail of your dreams.</p>
-        </div>
-        <div class="feature-card">
-            <h3>🌙 Sleep & Dream Analytics</h3>
-            <p>Comprehensive insights powered by your entries with optional wearable device sync to correlate dreams with sleep patterns.</p>
-        </div>
-        <div class="feature-card">
-            <h3>🤖 AI-Powered Dream Analysis</h3>
-            <p>Advanced language models provide contextual dream interpretation, pattern recognition, and symbolic meaning analysis.</p>
-        </div>
-        <div class="feature-card">
-            <h3>🔒 Privacy & Security First</h3>
-            <p>End-to-end encrypted entries stored locally first, with optional secure cloud backup that only you can access.</p>
-        </div>
-        <div class="feature-card">
-            <h3>📊 Pattern Recognition</h3>
-            <p>Discover recurring themes, symbols, and emotions in your dreams through intelligent data visualization and trend analysis.</p>
-        </div>
-        <div class="feature-card">
-            <h3>🎨 Personalization</h3>
-            <p>Customize your journaling experience with themes, fonts, and layouts that reflect your personal style and preferences.</p>
-        </div>
-    </section>
+  <section class="download-section" id="download">
+    <h2>Your dreams. Your diary.</h2>
+    <p>Free to use. Private by design. No ads, no AI, no tracking.</p>
+    <div class="download-actions">
+      <a href="https://play.google.com/store/apps/details?id=com.dreamdiary.app" target="_blank" rel="noopener" class="btn btn-primary">Get on Google Play</a>
+      <a href="dream-diary-privacy.html" class="btn btn-secondary">Privacy Policy</a>
+    </div>
+    <p style="margin-top:16px; font-size:12px; opacity:0.7;">Text • Voice • Images • Camera • Mood • Quotes • Reminders • Themes</p>
+  </section>
 
-    <section class="download-section">
-        <h2>Available on Google Play</h2>
-        <a href="#" class="download-btn">📱 Download Dream Diary</a>
-        <p style="margin-top: 2rem; color: var(--text-secondary);">Your dreams, your insights, your privacy • Version 1.5.2</p>
-    </section>
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="smart-music-player.html">Smart Music</a>
+        <a href="data-desk.html">Data Desk</a>
+        <a href="status-saver.html">Status Saver</a>
+        <a href="dream-diary-privacy.html">Privacy</a>
+        <a href="about.html">About</a>
+      </div>
+      <p><strong>© 2026 SIV Digital.</strong> Dream Diary is part of the Salem Innovative Ventures collection.</p>
+    </div>
+  </footer>
 
-    <footer>
-        <p>&copy; 2026 SIV Digital - Salem Innovative Ventures</p>
-        <p><a href="dream-diary-privacy.html">Privacy Policy</a> | <a href="index.html">Back to Home</a></p>
-    </footer>
-
-    <script>
-        function toggleTheme() {
-            const html = document.documentElement;
-            const currentTheme = html.getAttribute('data-theme');
-            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
-            
-            html.setAttribute('data-theme', newTheme);
-            localStorage.setItem('theme', newTheme);
-            
-            // Update toggle button text
-            const toggleText = document.querySelector('.theme-toggle .text');
-            const toggleIcon = document.querySelector('.theme-toggle .icon');
-            
-            if (newTheme === 'dark') {
-                toggleText.textContent = 'Light Mode';
-                toggleIcon.textContent = '☀️';
-            } else {
-                toggleText.textContent = 'Dark Mode';
-                toggleIcon.textContent = '🌙';
-            }
-        }
-
-        // Load saved theme on page load
-        document.addEventListener('DOMContentLoaded', function() {
-            const savedTheme = localStorage.getItem('theme') || 'light';
-            document.documentElement.setAttribute('data-theme', savedTheme);
-            
-            const toggleText = document.querySelector('.theme-toggle .text');
-            const toggleIcon = document.querySelector('.theme-toggle .icon');
-            
-            if (savedTheme === 'dark') {
-                toggleText.textContent = 'Light Mode';
-                toggleIcon.textContent = '☀️';
-            } else {
-                toggleText.textContent = 'Dark Mode';
-                toggleIcon.textContent = '🌙';
-            }
-        });
-    </script>
+  <script>
+    function toggleTheme(){ const h=document.documentElement; const n=h.getAttribute('data-theme')==='dark'?'light':'dark'; h.setAttribute('data-theme',n); localStorage.setItem('theme',n); updateIcon(n); }
+    function updateIcon(t){ const e=document.getElementById('themeIcon'); if(e) e.textContent=t==='dark'?'☀':'◑'; }
+    function toggleMenu(){ const b=document.getElementById('menuToggle'); const n=document.getElementById('mobileNav'); const o=b.classList.toggle('open'); n.classList.toggle('open',o); b.setAttribute('aria-expanded',o); n.setAttribute('aria-hidden',!o); document.body.style.overflow=o?'hidden':''; }
+    function closeMenu(){ const b=document.getElementById('menuToggle'); const n=document.getElementById('mobileNav'); b.classList.remove('open'); n.classList.remove('open'); b.setAttribute('aria-expanded','false'); n.setAttribute('aria-hidden','true'); document.body.style.overflow=''; }
+    document.addEventListener('DOMContentLoaded',()=>{ const s=localStorage.getItem('theme')||'light'; document.documentElement.setAttribute('data-theme',s); updateIcon(s); const hdr=document.getElementById('site-header'); window.addEventListener('scroll',()=>hdr.classList.toggle('scrolled',scrollY>8),{passive:true}); });
+    window.addEventListener('resize',()=>{ if(innerWidth>640) closeMenu(); });
+  </script>
 </body>
 </html>
+
+

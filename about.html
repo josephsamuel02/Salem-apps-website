@@ -1,126 +1,134 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us - SIV Digital</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About SIV Digital</title>
+  <meta name="description" content="About Salem Innovative Ventures the studio behind Smart Music Player, Dream Diary, Data Desk and Status Saver.">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="images/Salem inovative ventures logo.png">
 </head>
 <body>
-    <div class="theme-toggle" onclick="toggleTheme()">
-        <span class="icon">🌓</span>
-        <span class="text">Toggle Theme</span>
+  <header id="site-header">
+    <nav aria-label="Primary">
+      <a href="index.html" class="logo">
+        <img src="images/Salem inovative ventures logo.png" alt="Salem Innovative Ventures logo">
+        <span><strong>SIV</strong> DIGITAL</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="smart-music-player.html">Smart Music</a></li>
+        <li><a href="dream-diary.html">Dream Diary</a></li>
+        <li><a href="data-desk.html">Data Desk</a></li>
+        <li><a href="status-saver.html">Status Saver</a></li>
+        <li><a class="active" href="about.html">About</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="icon-btn desktop-only" aria-label="Toggle theme" onclick="toggleTheme()"><span id="themeIcon">◑</span></button>
+        <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false" onclick="toggleMenu()"><span></span><span></span><span></span></button>
+      </div>
+    </nav>
+  </header>
+
+  <div class="mobile-nav" id="mobileNav" aria-hidden="true">
+    <a href="index.html">Home <small>→</small></a>
+    <a href="smart-music-player.html">Smart Music <small>→</small></a>
+    <a href="dream-diary.html">Dream Diary <small>→</small></a>
+    <a href="data-desk.html">Data Desk <small>→</small></a>
+    <a href="status-saver.html">Status Saver <small>→</small></a>
+    <a href="about.html">About <small>• Current</small></a>
+    <div style="display:flex; gap:12px; margin-top:12px;">
+      <button class="btn btn-secondary" style="flex:1;" onclick="toggleTheme()">Toggle Theme</button>
+      <a href="mailto:support@sivdigital.com" class="btn btn-primary" style="flex:1;" onclick="closeMenu()">Contact</a>
     </div>
+  </div>
 
-    <header>
-        <nav>
-            <a href="index.html" class="logo">SIV <span class="highlight">Digital</span></a>
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="smart-music-player.html">Smart Music</a></li>
-                <li><a href="dream-diary.html">Dream Diary</a></li>
-                <li><a href="data-desk.html">Data Desk</a></li>
-            </ul>
-        </nav>
-    </header>
+  <section class="about-hero">
+    <div style="display:flex; justify-content:center; margin-bottom:20px;">
+      <img src="images/Salem inovative ventures logo.png" alt="Salem Innovative Ventures logo" style="width:84px; height:84px; border-radius:16px; background:#fff; padding:6px; border:1px solid var(--border); box-shadow: var(--shadow-md);">
+    </div>
+    <div class="eyebrow" style="margin:0 auto 16px; display:inline-flex;">Salem Innovative Ventures</div>
+    <h1>We build tools <span>that disappear.</span></h1>
+    <p>The best technology is invisible. It doesn’t demand attention it gives you back time, focus and control. That’s what we mean by premium.</p>
+  </section>
 
-    <section class="about-hero">
-        <h1>About SIV Digital</h1>
-        <p>Salem Innovative Ventures - Where innovation meets craftsmanship in digital experiences</p>
+  <div class="about-content">
+    <section class="about-section">
+      <h2>Our Story</h2>
+      <p>SIV Digital began with a simple frustration: why does powerful software have to feel heavy? Spreadsheets that crawl. Music apps that shout. Journals that treat your thoughts as data points.</p>
+      <p>We started Salem Innovative Ventures to prove the opposite that restraint is a feature. Small team, long timelines, obsessive attention to performance and privacy. Each app is crafted like an object: measured, durable, and quiet where it should be.</p>
     </section>
 
-    <div class="about-content">
-        <section class="about-section">
-            <h2>Our Story</h2>
-            <p>Founded with a vision to revolutionize mobile experiences, SIV Digital (Salem Innovative Ventures) emerged from a passion for creating digital solutions that truly matter. We believe technology should enhance human potential, not complicate it.</p>
-            <p>Our journey began with a simple question: "How can we make digital tools that people actually love using?" This philosophy drives every line of code we write, every interface we design, and every feature we develop.</p>
-        </section>
+    <section class="about-section">
+      <h2>Mission</h2>
+      <p style="font-size:18px; font-weight:500; color:var(--text); line-height:1.5;">Craft essential software with the discipline of hardware.</p>
+      <p>Black and white. Fast and offline first. Private by default. Every decision removes complexity until only what matters remains.</p>
+    </section>
 
-        <section class="about-section">
-            <h2>Our Mission</h2>
-            <p>To craft premium mobile applications and digital solutions that seamlessly integrate into people's lives, empowering them to create, manage, and experience their digital world with unprecedented ease and joy.</p>
-        </section>
+    <section class="about-section" id="values">
+      <h2>Values</h2>
+      <div class="values-grid">
+        <div class="value-card">
+          <h3>01 Restraint</h3>
+          <p>We ship fewer features, but complete. No feature flags for the sake of it. If it doesn’t earn its place, it’s removed.</p>
+        </div>
+        <div class="value-card">
+          <h3>02 Performance</h3>
+          <p>60fps, instant launch, offline true. Efficiency is not optional it’s respect for your time and battery.</p>
+        </div>
+        <div class="value-card">
+          <h3>03 Privacy</h3>
+          <p>Local first, encrypted, no trackers. Your music, dreams and data never become our product.</p>
+        </div>
+        <div class="value-card">
+          <h3>04 Craft</h3>
+          <p>Typography, spacing, haptics the last 10% is 90% of the feeling. We sweat the details you only feel.</p>
+        </div>
+      </div>
+    </section>
 
-        <section class="about-section">
-            <h2>Our Values</h2>
-            <div class="values-grid">
-                <div class="value-card">
-                    <h3>🚀 Innovation</h3>
-                    <p>We push boundaries and explore new possibilities in mobile technology, always staying ahead of the curve.</p>
-                </div>
-                <div class="value-card">
-                    <h3>🎨 Craftsmanship</h3>
-                    <p>Every pixel, every interaction, every feature is carefully crafted with attention to detail and user experience.</p>
-                </div>
-                <div class="value-card">
-                    <h3>🛡️ Privacy</h3>
-                    <p>Your data belongs to you. We build with privacy-first principles and transparent practices.</p>
-                </div>
-                <div class="value-card">
-                    <h3>⚡ Performance</h3>
-                    <p>Speed and efficiency are not optional. Our apps are optimized for seamless, lightning-fast experiences.</p>
-                </div>
-            </div>
-        </section>
+    <section class="about-section">
+      <h2>Products</h2>
+      <p><strong>Smart Music Player</strong> Pure offline player for your local library. Fast, lightweight, private. No internet needed.</p>
+      <p><strong>Dream Diary</strong> Private diary with text, voice, images, camera, mood tracker, quotes, reminders and themes. No AI, fully offline capable.</p>
+      <p><strong>Data Desk</strong> Free mobile data for browsing. Daily check ins, tasks and instant top ups to any network.</p>
+      <p><strong>Status Saver</strong> Save WhatsApp statuses in one tap. Download images & videos, share and repost in original quality.</p>
+      <div style="display:flex; gap:12px; margin-top:20px; flex-wrap:wrap;">
+        <a href="index.html#apps" class="btn btn-primary">Explore Products</a>
+        <a href="mailto:support@sivdigital.com" class="btn btn-secondary">Work with us</a>
+      </div>
+    </section>
 
-        <section class="about-section">
-            <h2>Our Products</h2>
-            <p>We specialize in three core areas that represent the future of mobile productivity and entertainment:</p>
-            <p><strong>Smart Music Player:</strong> Revolutionizing how people experience music with AI-powered features and stunning visualizations.</p>
-            <p><strong>Dream Diary:</strong> Helping users unlock the mysteries of their subconscious through intelligent dream journaling and analysis.</p>
-            <p><strong>Data Desk:</strong> Empowering professionals with comprehensive data management and visualization tools that work anywhere.</p>
-        </section>
+    <section class="about-section about-section--invert">
+      <h2>Looking forward</h2>
+      <p>We’re exploring gentle haptics, spatial interfaces and smarter offline tools always asking: does this make the tool more useful and more private? If not, we don’t ship it. Join us as we build the quieter future of software.</p>
+      <p style="margin-top:12px; font-size:13px; letter-spacing:0.02em;">Salem, Tamil Nadu • Remote first • support@sivdigital.com</p>
+    </section>
+  </div>
 
-        <section class="about-section">
-            <h2>Looking Forward</h2>
-            <p>We're constantly exploring new frontiers in mobile technology. From augmented reality experiences to advanced AI integration, our roadmap is filled with exciting innovations that will continue to push the boundaries of what's possible on mobile devices.</p>
-            <p>Join us on this journey as we continue to build the future, one exceptional app at a time.</p>
-        </section>
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="smart-music-player.html">Smart Music</a>
+        <a href="dream-diary.html">Dream Diary</a>
+        <a href="data-desk.html">Data Desk</a>
+        <a href="status-saver.html">Status Saver</a>
+        <a href="mailto:support@sivdigital.com">Contact</a>
+      </div>
+      <p><strong>© 2026 Salem Innovative Ventures.</strong> SIV Digital Technology, refined.</p>
     </div>
+  </footer>
 
-    <footer>
-        <p>&copy; 2026 SIV Digital - Salem Innovative Ventures. All Rights Reserved.</p>
-        <p><a href="index.html">Home</a> | <a href="#">Contact</a> | <a href="#">Support</a> | <a href="#">Careers</a></p>
-    </footer>
-
-    <script>
-        function toggleTheme() {
-            const html = document.documentElement;
-            const currentTheme = html.getAttribute('data-theme');
-            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
-            
-            html.setAttribute('data-theme', newTheme);
-            localStorage.setItem('theme', newTheme);
-            
-            // Update toggle button text
-            const toggleText = document.querySelector('.theme-toggle .text');
-            const toggleIcon = document.querySelector('.theme-toggle .icon');
-            
-            if (newTheme === 'dark') {
-                toggleText.textContent = 'Light Mode';
-                toggleIcon.textContent = '☀️';
-            } else {
-                toggleText.textContent = 'Dark Mode';
-                toggleIcon.textContent = '🌙';
-            }
-        }
-
-        // Load saved theme on page load
-        document.addEventListener('DOMContentLoaded', function() {
-            const savedTheme = localStorage.getItem('theme') || 'light';
-            document.documentElement.setAttribute('data-theme', savedTheme);
-            
-            const toggleText = document.querySelector('.theme-toggle .text');
-            const toggleIcon = document.querySelector('.theme-toggle .icon');
-            
-            if (savedTheme === 'dark') {
-                toggleText.textContent = 'Light Mode';
-                toggleIcon.textContent = '☀️';
-            } else {
-                toggleText.textContent = 'Dark Mode';
-                toggleIcon.textContent = '🌙';
-            }
-        });
-    </script>
+  <script>
+    function toggleTheme(){ const h=document.documentElement; const n=h.getAttribute('data-theme')==='dark'?'light':'dark'; h.setAttribute('data-theme',n); localStorage.setItem('theme',n); updateIcon(n); }
+    function updateIcon(t){ const e=document.getElementById('themeIcon'); if(e) e.textContent=t==='dark'?'☀':'◑'; }
+    function toggleMenu(){ const b=document.getElementById('menuToggle'); const n=document.getElementById('mobileNav'); const o=b.classList.toggle('open'); n.classList.toggle('open',o); b.setAttribute('aria-expanded',o); n.setAttribute('aria-hidden',!o); document.body.style.overflow=o?'hidden':''; }
+    function closeMenu(){ const b=document.getElementById('menuToggle'); const n=document.getElementById('mobileNav'); b.classList.remove('open'); n.classList.remove('open'); b.setAttribute('aria-expanded','false'); n.setAttribute('aria-hidden','true'); document.body.style.overflow=''; }
+    document.addEventListener('DOMContentLoaded',()=>{ const s=localStorage.getItem('theme')||'light'; document.documentElement.setAttribute('data-theme',s); updateIcon(s); const hdr=document.getElementById('site-header'); window.addEventListener('scroll',()=>hdr.classList.toggle('scrolled',scrollY>8),{passive:true}); });
+    window.addEventListener('resize',()=>{ if(innerWidth>640) closeMenu(); });
+  </script>
 </body>
 </html>
+
+

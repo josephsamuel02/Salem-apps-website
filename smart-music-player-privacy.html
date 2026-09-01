@@ -1,112 +1,112 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy - Smart Music Player</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy Smart Music Player SIV Digital</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="images/smart music player logo.png">
 </head>
-<body class="theme-music">
-    <header>
-        <nav>
-            <a href="index.html" class="logo">SIV</a>
-            <ul class="nav-links">
-                <li><a href="smart-music-player.html">Back to App</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <div class="privacy-container">
-        <h1>Privacy Policy</h1>
-        <p><strong>Smart Music Player</strong></p>
-        <p><strong>Effective Date:</strong> June 26, 2026</p>
-        
-        <p>
-        Smart Music Player respects your privacy. This Privacy Policy explains how the application
-        uses permissions and how information may be handled while you use the app.
-        </p>
-        
-        <h2>Information We Collect</h2>
-        <p>
-        Smart Music Player does not require users to create an account and does not intentionally
-        collect personal information such as your name, email address, phone number, or location.
-        </p>
-        
-        <h2>Media Permission</h2>
-        <p>
-        The app requests permission to access your device's media files so it can:
-        </p>
-        <ul>
-            <li>Scan audio files stored on your device.</li>
-            <li>Display your music library.</li>
-            <li>Play music you have saved on your device.</li>
-        </ul>
-        <p>
-        Your music files remain on your device and are never uploaded to our servers.
-        </p>
-        
-        <h2>Advertising</h2>
-        <p>
-        Smart Music Player uses <strong>Google AdMob</strong> to display advertisements.
-        AdMob may automatically collect certain information to provide personalized or
-        non-personalized ads, including:
-        </p>
-        <ul>
-            <li>Advertising ID</li>
-            <li>Device information</li>
-            <li>IP address</li>
-            <li>Diagnostic information</li>
-            <li>App interaction data</li>
-        </ul>
-        <p>
-        This information is collected directly by Google and is governed by Google's Privacy Policy.
-        </p>
-        <p>
-        You can learn more here:
-        </p>
-        <p>
-        <a href="https://policies.google.com/privacy" target="_blank">
-        https://policies.google.com/privacy
-        </a>
-        </p>
-        
-        <h2>Data Sharing</h2>
-        <p>
-        We do not sell, rent, or share your personal information.
-        Any information collected for advertising purposes is handled directly by Google AdMob.
-        </p>
-        
-        <h2>Data Security</h2>
-        <p>
-        We are committed to protecting user privacy.
-        Since Smart Music Player does not store your personal information on our servers,
-        there is minimal risk of personal data exposure from our services.
-        </p>
-        
-        <h2>Children's Privacy</h2>
-        <p>
-        Smart Music Player is not intended to knowingly collect personal information from children.
-        If you believe a child has provided personal information through the app,
-        please contact us.
-        </p>
-        
-        <h2>Changes to This Privacy Policy</h2>
-        <p>
-        We may update this Privacy Policy from time to time.
-        Changes will be posted on this page with a revised effective date.
-        </p>
-        
-        <h2>Contact Us</h2>
-        <p>
-        If you have any questions regarding this Privacy Policy, you may contact us at:
-        </p>
-        <p>
-        <strong>Email:</strong><br>
-        mrsamd02@gmail.com</p>
+<body>
+  <header id="site-header">
+    <nav aria-label="Primary">
+      <a href="index.html" class="logo">
+        <img src="images/Salem inovative ventures logo.png" alt="Salem Innovative Ventures logo">
+        <span><strong>SIV</strong> DIGITAL</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="smart-music-player.html">Smart Music</a></li>
+        <li><a href="dream-diary.html">Dream Diary</a></li>
+        <li><a href="data-desk.html">Data Desk</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="icon-btn desktop-only" aria-label="Toggle theme" onclick="toggleTheme()"><span id="themeIcon">◑</span></button>
+        <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false" onclick="toggleMenu()"><span></span><span></span><span></span></button>
+      </div>
+    </nav>
+  </header>
+  <div class="mobile-nav" id="mobileNav" aria-hidden="true">
+    <a href="index.html">Home <small>→</small></a>
+    <a href="smart-music-player.html">Smart Music Player <small>→</small></a>
+    <a href="dream-diary.html">Dream Diary <small>→</small></a>
+    <a href="data-desk.html">Data Desk <small>→</small></a>
+    <div style="display:flex; gap:12px; margin-top:12px;">
+      <button class="btn btn-secondary" style="flex:1;" onclick="toggleTheme()">Toggle Theme</button>
+      <a href="smart-music-player.html" class="btn btn-primary" style="flex:1;" onclick="closeMenu()">Back to App</a>
     </div>
+  </div>
 
-    <footer>
-        <p><a href="smart-music-player.html">Back to Smart Music Player</a></p>
-    </footer>
+  <div class="privacy-container">
+    <div style="display:flex; align-items:center; gap:12px; margin-bottom:16px;">
+      <img src="images/smart music player logo.png" alt="Smart Music Player logo" style="width:48px; height:48px; border-radius:12px; background:#fff; padding:4px; border:1px solid var(--border);">
+      <div>
+        <div style="font-size:11px; letter-spacing:0.12em; text-transform:uppercase; font-weight:700; color:var(--text-tertiary);">SIV Digital</div>
+        <div style="font-size:16px; font-weight:700; letter-spacing:-0.02em;">Smart Music Player</div>
+      </div>
+    </div>
+    <h1>Privacy Policy</h1>
+    <p><strong>Effective Date:</strong> June 26, 2026</p>
+    <p>Smart Music Player respects your privacy. This Privacy Policy explains how the application uses permissions and how information may be handled while you use the app.</p>
+
+    <h2>Information We Collect</h2>
+    <p>Smart Music Player does not require users to create an account and does not intentionally collect personal information such as your name, email address, phone number, or location.</p>
+
+    <h2>Media Permission</h2>
+    <p>The app requests permission to access your device's media files so it can:</p>
+    <ul>
+      <li>Scan audio files stored on your device.</li>
+      <li>Display your music library.</li>
+      <li>Play music you have saved on your device.</li>
+    </ul>
+    <p>Your music files remain on your device and are never uploaded to our servers.</p>
+
+    <h2>Advertising</h2>
+    <p>Smart Music Player uses <strong>Google AdMob</strong> to display advertisements. AdMob may automatically collect certain information to provide personalized or non personalized ads, including:</p>
+    <ul>
+      <li>Advertising ID</li>
+      <li>Device information</li>
+      <li>IP address</li>
+      <li>Diagnostic information</li>
+      <li>App interaction data</li>
+    </ul>
+    <p>This information is collected directly by Google and is governed by Google's Privacy Policy.</p>
+    <p><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">https://policies.google.com/privacy</a></p>
+
+    <h2>Data Sharing</h2>
+    <p>We do not sell, rent, or share your personal information. Any information collected for advertising purposes is handled directly by Google AdMob.</p>
+
+    <h2>Data Security</h2>
+    <p>We are committed to protecting user privacy. Since Smart Music Player does not store your personal information on our servers, there is minimal risk of personal data exposure from our services.</p>
+
+    <h2>Children's Privacy</h2>
+    <p>Smart Music Player is not intended to knowingly collect personal information from children. If you believe a child has provided personal information through the app, please contact us.</p>
+
+    <h2>Changes to This Privacy Policy</h2>
+    <p>We may update this Privacy Policy from time to time. Changes will be posted on this page with a revised effective date.</p>
+
+    <h2>Contact Us</h2>
+    <p>If you have any questions regarding this Privacy Policy, you may contact us at:</p>
+    <p><strong>Email:</strong> mrsamd02@gmail.com</p>
+    <hr>
+    <p style="text-align:center;"><a href="smart-music-player.html" class="btn btn-secondary" style="display:inline-flex;">← Back to Smart Music Player</a></p>
+  </div>
+
+  <footer>
+    <div class="footer-inner">
+      <p><strong>© 2026 SIV Digital.</strong> Salem Innovative Ventures.</p>
+    </div>
+  </footer>
+
+  <script>
+    function toggleTheme(){ const h=document.documentElement; const n=h.getAttribute('data-theme')==='dark'?'light':'dark'; h.setAttribute('data-theme',n); localStorage.setItem('theme',n); updateIcon(n); }
+    function updateIcon(t){ const e=document.getElementById('themeIcon'); if(e) e.textContent=t==='dark'?'☀':'◑'; }
+    function toggleMenu(){ const b=document.getElementById('menuToggle'); const n=document.getElementById('mobileNav'); const o=b.classList.toggle('open'); n.classList.toggle('open',o); b.setAttribute('aria-expanded',o); n.setAttribute('aria-hidden',!o); document.body.style.overflow=o?'hidden':''; }
+    function closeMenu(){ const b=document.getElementById('menuToggle'); const n=document.getElementById('mobileNav'); b.classList.remove('open'); n.classList.remove('open'); b.setAttribute('aria-expanded','false'); n.setAttribute('aria-hidden','true'); document.body.style.overflow=''; }
+    document.addEventListener('DOMContentLoaded',()=>{ const s=localStorage.getItem('theme')||'light'; document.documentElement.setAttribute('data-theme',s); updateIcon(s); const hdr=document.getElementById('site-header'); window.addEventListener('scroll',()=>hdr.classList.toggle('scrolled',scrollY>8),{passive:true}); });
+    window.addEventListener('resize',()=>{ if(innerWidth>640) closeMenu(); });
+  </script>
 </body>
 </html>
+
+
