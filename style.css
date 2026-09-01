@@ -108,8 +108,8 @@ nav {
   align-items: center;
   gap: 10px;
   font-weight: 700;
-  font-size: 14px;
-  letter-spacing: 0.14em;
+  font-size: 17px;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
   color: var(--text);
   white-space: nowrap;
