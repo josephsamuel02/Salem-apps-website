@@ -39,6 +39,8 @@
         <li><a href="smart-music-player.html">Smart Music</a></li>
         <li><a href="dream-diary.html">Dream Diary</a></li>
         <li><a href="data-desk.html">Data Desk</a></li>
+        <li><a href="status-saver.html">Status Saver</a></li>
+        <li><a href="about.html">About</a></li>
       </ul>
       <div class="nav-actions">
         <button class="icon-btn desktop-only" aria-label="Toggle theme" onclick="toggleTheme()"><span id="themeIcon">◑</span></button>
@@ -47,10 +49,12 @@
     </nav>
   </header>
   <div class="mobile-nav" id="mobileNav" aria-hidden="true">
-    <a href="index.html">Home <small>→</small></a>
-    <a href="smart-music-player.html">Smart Music Player <small>→</small></a>
-    <a href="dream-diary.html">Dream Diary <small>→</small></a>
-    <a href="data-desk.html">Data Desk <small>→</small></a>
+    <a href="index.html" onclick="closeMenu()">Home <small>→</small></a>
+    <a href="smart-music-player.html" onclick="closeMenu()">Smart Music Player <small>→</small></a>
+    <a href="dream-diary.html" onclick="closeMenu()">Dream Diary <small>→</small></a>
+    <a href="data-desk.html" onclick="closeMenu()">Data Desk <small>→</small></a>
+    <a href="status-saver.html" onclick="closeMenu()">Status Saver <small>→</small></a>
+    <a href="about.html" onclick="closeMenu()">About <small>→</small></a>
     <div style="display:flex; gap:12px; margin-top:12px;">
       <button class="btn btn-secondary" style="flex:1;" onclick="toggleTheme()">Toggle Theme</button>
       <a href="smart-music-player.html" class="btn btn-primary" style="flex:1;" onclick="closeMenu()">Back to App</a>
