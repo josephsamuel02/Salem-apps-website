@@ -1,151 +1,279 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en" data-theme="light">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dream Diary Private Diary with Voice, Mood & Themes SIV Digital</title>
-  <meta name="description" content="Dream Diary by SIV Digital. Text, voice recordings, images, mood tracker, camera capture, quotes, reminders and custom themes.">
-  <meta name="author" content="Salem Innovative Ventures">
-  <meta name="theme-color" content="#000000">
-  <link rel="canonical" href="https://sivdigital.com/dream-diary.html">
-  <link rel="stylesheet" href="style.css">
-  <link rel="icon" href="images/Dream diary logo.png">
-  <link rel="apple-touch-icon" href="images/Dream diary logo.png">
-  <!-- Open Graph / Facebook / WhatsApp / LinkedIn -->
-  <meta property="og:type" content="website">
-  <meta property="og:site_name" content="SIV Digital">
-  <meta property="og:locale" content="en_IN">
-  <meta property="og:title" content="Dream Diary Private Diary with Voice, Mood & Themes SIV Digital">
-  <meta property="og:description" content="Text, voice recordings, images & camera, mood tracker, quotes, reminders and custom themes & backgrounds. No AI.">
-  <meta property="og:url" content="https://sivdigital.com/dream-diary.html">
-  <meta property="og:image" content="https://sivdigital.com/images/Dream%20diary%20logo.png">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
-  <meta property="og:image:alt" content="Dream Diary logo">
-  <!-- Twitter / X -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Dream Diary Private Diary with Voice, Mood & Themes SIV Digital">
-  <meta name="twitter:description" content="Text, voice recordings, images & camera, mood tracker, quotes, reminders and custom themes.">
-  <meta name="twitter:image" content="https://sivdigital.com/images/Dream%20diary%20logo.png">
-</head>
-<body>
-  <header id="site-header">
-    <nav aria-label="Primary">
-      <a href="index.html" class="logo">
-        <img src="images/Salem inovative ventures logo.png" alt="Salem Innovative Ventures logo">
-        <span><strong>SIV</strong> DIGITAL</span>
-      </a>
-      <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="smart-music-player.html">Smart Music</a></li>
-        <li><a class="active" href="dream-diary.html">Dream Diary</a></li>
-        <li><a href="data-desk.html">Data Desk</a></li>
-        <li><a href="status-saver.html">Status Saver</a></li>
-        <li><a href="about.html">About</a></li>
-      </ul>
-      <div class="nav-actions">
-        <button class="icon-btn desktop-only" aria-label="Toggle theme" onclick="toggleTheme()"><span id="themeIcon">◑</span></button>
-        <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false" onclick="toggleMenu()"><span></span><span></span><span></span></button>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dream Diary Private Diary with Voice, Mood & Themes SIV Technology</title>
+    <meta
+      name="description"
+      content="Dream Diary by SIV Technology. Text, voice recordings, images, mood tracker, camera capture, quotes, reminders and custom themes."
+    />
+    <meta name="author" content="Salem Innovative Ventures" />
+    <meta name="theme-color" content="#000000" />
+    <link rel="canonical" href="https://sivTechnology.com/dream-diary.html" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="images/Dream diary logo.png" />
+    <link rel="apple-touch-icon" href="images/Dream diary logo.png" />
+    <!-- Open Graph / Facebook / WhatsApp / LinkedIn -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="SIV Technology" />
+    <meta property="og:locale" content="en_IN" />
+    <meta
+      property="og:title"
+      content="Dream Diary Private Diary with Voice, Mood & Themes SIV Technology"
+    />
+    <meta
+      property="og:description"
+      content="Text, voice recordings, images & camera, mood tracker, quotes, reminders and custom themes & backgrounds. No AI."
+    />
+    <meta property="og:url" content="https://sivTechnology.com/dream-diary.html" />
+    <meta
+      property="og:image"
+      content="https://sivTechnology.com/images/Dream%20diary%20logo.png"
+    />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Dream Diary logo" />
+    <!-- Twitter / X -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Dream Diary Private Diary with Voice, Mood & Themes SIV Technology"
+    />
+    <meta
+      name="twitter:description"
+      content="Text, voice recordings, images & camera, mood tracker, quotes, reminders and custom themes."
+    />
+    <meta
+      name="twitter:image"
+      content="https://sivTechnology.com/images/Dream%20diary%20logo.png"
+    />
+  </head>
+  <body>
+    <header id="site-header">
+      <nav aria-label="Primary">
+        <a href="index.html" class="logo">
+          <img
+            src="images/Salem inovative ventures logo.png"
+            alt="Salem Innovative Ventures logo"
+          />
+          <span><strong>SIV</strong> Technology</span>
+        </a>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="smart-music-player.html">Smart Music</a></li>
+          <li><a class="active" href="dream-diary.html">Dream Diary</a></li>
+          <li><a href="data-desk.html">Data Desk</a></li>
+          <li><a href="status-saver.html">Status Saver</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+        <div class="nav-actions">
+          <button
+            class="icon-btn desktop-only"
+            aria-label="Toggle theme"
+            onclick="toggleTheme()"
+          >
+            <span id="themeIcon">◑</span>
+          </button>
+          <button
+            class="menu-toggle"
+            id="menuToggle"
+            aria-label="Open menu"
+            aria-expanded="false"
+            onclick="toggleMenu()"
+          >
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <div class="mobile-nav" id="mobileNav" aria-hidden="true">
+      <a href="index.html" onclick="closeMenu()">Home <small>→</small></a>
+      <a href="smart-music-player.html" onclick="closeMenu()">Smart Music <small>→</small></a>
+      <a href="dream-diary.html" onclick="closeMenu()">Dream Diary <small>• Current</small></a>
+      <a href="data-desk.html" onclick="closeMenu()">Data Desk <small>→</small></a>
+      <a href="status-saver.html" onclick="closeMenu()">Status Saver <small>→</small></a>
+      <a href="about.html" onclick="closeMenu()">About <small>→</small></a>
+      <div style="display: flex; gap: 12px; margin-top: 12px">
+        <button class="btn btn-secondary" style="flex: 1" onclick="toggleTheme()">
+          Toggle Theme
+        </button>
+        <a href="#download" class="btn btn-primary" style="flex: 1" onclick="closeMenu()"
+          >Download</a
+        >
       </div>
-    </nav>
-  </header>
-
-  <div class="mobile-nav" id="mobileNav" aria-hidden="true">
-    <a href="index.html" onclick="closeMenu()">Home <small>→</small></a>
-    <a href="smart-music-player.html" onclick="closeMenu()">Smart Music <small>→</small></a>
-    <a href="dream-diary.html" onclick="closeMenu()">Dream Diary <small>• Current</small></a>
-    <a href="data-desk.html" onclick="closeMenu()">Data Desk <small>→</small></a>
-    <a href="status-saver.html" onclick="closeMenu()">Status Saver <small>→</small></a>
-    <a href="about.html" onclick="closeMenu()">About <small>→</small></a>
-    <div style="display:flex; gap:12px; margin-top:12px;">
-      <button class="btn btn-secondary" style="flex:1;" onclick="toggleTheme()">Toggle Theme</button>
-      <a href="#download" class="btn btn-primary" style="flex:1;" onclick="closeMenu()">Download</a>
     </div>
-  </div>
 
-  <section class="product-hero reverse">
-    <div class="product-copy">
-      <div class="eyebrow">02 Private Diary</div>
-      <h1>Dream <span>Diary</span></h1>
-      <p>A private diary made for dreams. Write with text, attach voice recordings and images, capture from camera, track your mood and personalize with themes & backgrounds. No AI. Just your thoughts.</p>
-      <div class="product-stats">
-        <div><strong>Voice</strong><span>+ Text + Images</span></div>
-        <div><strong>Mood</strong><span>Tracker</span></div>
-        <div><strong>Themes</strong><span> & Backgrounds</span></div>
+    <section class="product-hero reverse">
+      <div class="product-copy">
+        <div class="eyebrow">02 Private Diary</div>
+        <h1>Dream <span>Diary</span></h1>
+        <p>
+          A private diary made for dreams. Write with text, attach voice recordings and images,
+          capture from camera, track your mood and personalize with themes & backgrounds. No
+          AI. Just your thoughts.
+        </p>
+        <div class="product-stats">
+          <div><strong>Voice</strong><span>+ Text + Images</span></div>
+          <div><strong>Mood</strong><span>Tracker</span></div>
+          <div><strong>Themes</strong><span> & Backgrounds</span></div>
+        </div>
+        <div style="display: flex; gap: 12px; flex-wrap: wrap">
+          <a
+            href="https://play.google.com/store/apps/details?id=com.dreamdiary.app"
+            target="_blank"
+            rel="noopener"
+            class="btn btn-primary"
+            >Download App</a
+          >
+          <a href="#features" class="btn btn-secondary">Explore Features</a>
+        </div>
+        <p style="font-size: 12px; color: var(--text-tertiary); margin-top: 12px">
+          Version 1.5.2 • Android • 100% Private • Offline First
+        </p>
       </div>
-      <div style="display:flex; gap:12px; flex-wrap:wrap;">
-        <a href="https://play.google.com/store/apps/details?id=com.dreamdiary.app" target="_blank" rel="noopener" class="btn btn-primary">Download App</a>
-        <a href="#features" class="btn btn-secondary">Explore Features</a>
+      <div class="product-visual">
+        <img src="images/Dream diary logo.png" alt="Dream Diary logo large" />
       </div>
-      <p style="font-size:12px; color:var(--text-tertiary); margin-top:12px;">Version 1.5.2 • Android • 100% Private • Offline First</p>
-    </div>
-    <div class="product-visual">
-      <img src="images/Dream diary logo.png" alt="Dream Diary logo large">
-    </div>
-  </section>
+    </section>
 
-  <div class="section-label" id="features"><h2>Everything in your diary</h2></div>
-  <section class="features">
-    <div class="feature-card">
-      <h3><i>✎</i> Text & Voice Input</h3>
-      <p>Write rich text entries or record voice directly. Add audio notes to capture dreams exactly as you remember them.</p>
-    </div>
-    <div class="feature-card">
-      <h3><i>◐</i> Images & Camera Capture</h3>
-      <p>Attach images from gallery or capture instantly with camera. Keep sketches, screenshots or photos alongside your entry.</p>
-    </div>
-    <div class="feature-card">
-      <h3><i>◍</i> Mood Tracker</h3>
-      <p>Tag each entry with your mood. See patterns over time on a clean, monochrome timeline.</p>
-    </div>
-    <div class="feature-card">
-      <h3><i>◎</i> Inspirational Quotes</h3>
-      <p>Start each day with a curated inspirational quote on your home screen minimal and uplifting.</p>
-    </div>
-    <div class="feature-card">
-      <h3><i>⬢</i> Reminders</h3>
-      <p>Gentle daily reminders so you never forget to journal. Set your own time, quiet hours included.</p>
-    </div>
-    <div class="feature-card">
-      <h3><i>▣</i> Themes & Backgrounds</h3>
-      <p>Personalize with light/dark themes and custom backgrounds. Change colors and styles to match your mood.</p>
-    </div>
-  </section>
-
-  <section class="download-section" id="download">
-    <h2>Your dreams. Your diary.</h2>
-    <p>Free to use. Private by design. No ads, no AI, no tracking.</p>
-    <div class="download-actions">
-      <a href="https://play.google.com/store/apps/details?id=com.dreamdiary.app" target="_blank" rel="noopener" class="btn btn-primary">Get on Google Play</a>
-      <a href="dream-diary-privacy.html" class="btn btn-secondary">Privacy Policy</a>
-    </div>
-    <p style="margin-top:16px; font-size:12px; opacity:0.7;">Text • Voice • Images • Camera • Mood • Quotes • Reminders • Themes</p>
-  </section>
-
-  <footer>
-    <div class="footer-inner">
-      <div class="footer-links">
-        <a href="index.html">Home</a>
-        <a href="smart-music-player.html">Smart Music</a>
-        <a href="data-desk.html">Data Desk</a>
-        <a href="status-saver.html">Status Saver</a>
-        <a href="dream-diary-privacy.html">Privacy</a>
-        <a href="about.html">About</a>
+    <div class="section-label" id="features"><h2>Everything in your diary</h2></div>
+    <section class="features">
+      <div class="feature-card">
+        <h3><i>✎</i> Text & Voice Input</h3>
+        <p>
+          Write rich text entries or record voice directly. Add audio notes to capture dreams
+          exactly as you remember them.
+        </p>
       </div>
-      <p><strong>© 2026 SIV Digital.</strong> Dream Diary is part of the Salem Innovative Ventures collection.</p>
-      <p style="font-size:11px; letter-spacing:0.06em; text-transform:uppercase; color:var(--text-tertiary); margin-top:4px;">CAC RC 9166515 • SALEM INNOVATIVE VENTURES LTD • Nigeria</p>
-    </div>
-  </footer>
+      <div class="feature-card">
+        <h3><i>◐</i> Images & Camera Capture</h3>
+        <p>
+          Attach images from gallery or capture instantly with camera. Keep sketches,
+          screenshots or photos alongside your entry.
+        </p>
+      </div>
+      <div class="feature-card">
+        <h3><i>◍</i> Mood Tracker</h3>
+        <p>
+          Tag each entry with your mood. See patterns over time on a clean, monochrome
+          timeline.
+        </p>
+      </div>
+      <div class="feature-card">
+        <h3><i>◎</i> Inspirational Quotes</h3>
+        <p>
+          Start each day with a curated inspirational quote on your home screen minimal and
+          uplifting.
+        </p>
+      </div>
+      <div class="feature-card">
+        <h3><i>⬢</i> Reminders</h3>
+        <p>
+          Gentle daily reminders so you never forget to journal. Set your own time, quiet hours
+          included.
+        </p>
+      </div>
+      <div class="feature-card">
+        <h3><i>▣</i> Themes & Backgrounds</h3>
+        <p>
+          Personalize with light/dark themes and custom backgrounds. Change colors and styles
+          to match your mood.
+        </p>
+      </div>
+    </section>
 
-  <script>
-    function toggleTheme(){ const h=document.documentElement; const n=h.getAttribute('data-theme')==='dark'?'light':'dark'; h.setAttribute('data-theme',n); localStorage.setItem('theme',n); updateIcon(n); }
-    function updateIcon(t){ const e=document.getElementById('themeIcon'); if(e) e.textContent=t==='dark'?'☀':'◑'; }
-    function toggleMenu(){ const b=document.getElementById('menuToggle'); const n=document.getElementById('mobileNav'); const o=b.classList.toggle('open'); n.classList.toggle('open',o); b.setAttribute('aria-expanded',o); n.setAttribute('aria-hidden',!o); document.body.style.overflow=o?'hidden':''; }
-    function closeMenu(){ const b=document.getElementById('menuToggle'); const n=document.getElementById('mobileNav'); b.classList.remove('open'); n.classList.remove('open'); b.setAttribute('aria-expanded','false'); n.setAttribute('aria-hidden','true'); document.body.style.overflow=''; }
-    document.addEventListener('DOMContentLoaded',()=>{ const s=localStorage.getItem('theme')||'light'; document.documentElement.setAttribute('data-theme',s); updateIcon(s); const hdr=document.getElementById('site-header'); window.addEventListener('scroll',()=>hdr.classList.toggle('scrolled',scrollY>8),{passive:true}); });
-    window.addEventListener('resize',()=>{ if(innerWidth>640) closeMenu(); });
-  </script>
-</body>
+    <section class="download-section" id="download">
+      <h2>Your dreams. Your diary.</h2>
+      <p>Free to use. Private by design. No ads, no AI, no tracking.</p>
+      <div class="download-actions">
+        <a
+          href="https://play.google.com/store/apps/details?id=com.dreamdiary.app"
+          target="_blank"
+          rel="noopener"
+          class="btn btn-primary"
+          >Get on Google Play</a
+        >
+        <a href="dream-diary-privacy.html" class="btn btn-secondary">Privacy Policy</a>
+      </div>
+      <p style="margin-top: 16px; font-size: 12px; opacity: 0.7">
+        Text • Voice • Images • Camera • Mood • Quotes • Reminders • Themes
+      </p>
+    </section>
+
+    <footer>
+      <div class="footer-inner">
+        <div class="footer-links">
+          <a href="index.html">Home</a>
+          <a href="smart-music-player.html">Smart Music</a>
+          <a href="data-desk.html">Data Desk</a>
+          <a href="status-saver.html">Status Saver</a>
+          <a href="dream-diary-privacy.html">Privacy</a>
+          <a href="about.html">About</a>
+        </div>
+        <p>
+          <strong>© 2026 SIV Technology.</strong> Dream Diary is part of the Salem Innovative
+          Ventures collection.
+        </p>
+        <p
+          style="
+            font-size: 11px;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+            color: var(--text-tertiary);
+            margin-top: 4px;
+          "
+        >
+          CAC RC 9166515 • SALEM INNOVATIVE VENTURES LTD • Nigeria
+        </p>
+      </div>
+    </footer>
+
+    <script>
+      function toggleTheme() {
+        const h = document.documentElement;
+        const n = h.getAttribute("data-theme") === "dark" ? "light" : "dark";
+        h.setAttribute("data-theme", n);
+        localStorage.setItem("theme", n);
+        updateIcon(n);
+      }
+      function updateIcon(t) {
+        const e = document.getElementById("themeIcon");
+        if (e) e.textContent = t === "dark" ? "☀" : "◑";
+      }
+      function toggleMenu() {
+        const b = document.getElementById("menuToggle");
+        const n = document.getElementById("mobileNav");
+        const o = b.classList.toggle("open");
+        n.classList.toggle("open", o);
+        b.setAttribute("aria-expanded", o);
+        n.setAttribute("aria-hidden", !o);
+        document.body.style.overflow = o ? "hidden" : "";
+      }
+      function closeMenu() {
+        const b = document.getElementById("menuToggle");
+        const n = document.getElementById("mobileNav");
+        b.classList.remove("open");
+        n.classList.remove("open");
+        b.setAttribute("aria-expanded", "false");
+        n.setAttribute("aria-hidden", "true");
+        document.body.style.overflow = "";
+      }
+      document.addEventListener("DOMContentLoaded", () => {
+        const s = localStorage.getItem("theme") || "light";
+        document.documentElement.setAttribute("data-theme", s);
+        updateIcon(s);
+        const hdr = document.getElementById("site-header");
+        window.addEventListener(
+          "scroll",
+          () => hdr.classList.toggle("scrolled", scrollY > 8),
+          { passive: true },
+        );
+      });
+      window.addEventListener("resize", () => {
+        if (innerWidth > 640) closeMenu();
+      });
+    </script>
+  </body>
 </html>
-
-
